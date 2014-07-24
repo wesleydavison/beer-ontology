@@ -238,24 +238,6 @@
                 </American_IPA>
             </Samples>
         </IPA_and_Pale_Ale>
-        <String_Ale_and_Barley_Wine />
-            <Appearance>
-                <Color>Light amber to dark brown and virtually black</Color>
-                <Head>Full to minimal or none, depending on style and alcohol level, with higher ABV beers containing little to no head formation or retention</Head>
-            </Appearance>
-            <Aroma-and-taste>
-                <Malts>Sweet caramel and toffee-like to dark roasty</Malts>
-                <Hops>Generally mild to moderate in Old World styles up to strong aromas, flavors and bitterness in some American styles</Hops>
-                <Yeast>Esters provide balance and may be stronger in some styles/versions and add complexity</Yeast>
-            </Aroma-and-taste>
-            <Mouth-feel>
-                <Consistency>Silky, smooth, velvety to “chewy”</Consistency>
-                <Carbonation>Delicate to creamy</Carbonation>
-                <Body>Medium to full</Body>
-                <Finish>Generally long and often dry due to alcohol</Finish>
-            </Mouth-feel>
-            <Samples>
-            </Samples>
         <Brown_Ale>
             <Appearance>
                 <Color>Reddish-copper to dark brown</Color>
