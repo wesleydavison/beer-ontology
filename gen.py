@@ -11,11 +11,14 @@ root = 'beer'
 
 #generating the classes
 for beerClass in xml[root]:
-	print "<owl:Class rdf:ID=\"" + beerClass + "\" />"
+	print "<owl:Class rdf:ID=\"" + beerClass + "\">"
+	print "\t<rdfs:label xml:lang=\"en\">" + beerClass + "</rdfs:label>" 
 	
 	#generating the subclasses
 	for subClass1 in xml[root][str(beerClass)]:
 		print "\t<owl:Class rdf:ID=\"" + subClass1 + "\">"
-		print "\t<rdfs:subClassOf rdf:resource=\"#" + beerClass + "\" />"
+		print "\t\t<rdfs:subClassOf rdf:resource=\"#" + beerClass + "\" />"
+	
+	#closing class
 	print "</owl:Class>"
 
