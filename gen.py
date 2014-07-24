@@ -7,5 +7,5 @@ with open ("ontology.xml", "r") as myfile:
 
 xmlParsed = xmltodict.parse(data)
 for beerClasses in xmlParsed['beer']:
-	print beerClasses
+	print "<owl:Class rdf:ID=\"" + beerClasses + "\" />"
 
