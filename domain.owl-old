@@ -1,0 +1,999 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY domain "http://localhost/iai/lista1/domain.owl#" >
+    <!ENTITY domain2 "http://cin.ufpe.br/~wdbm/iai/domain.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://localhost/iai/lista1/domain.owl#"
+     xml:base="http://localhost/iai/lista1/domain.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:domain2="http://cin.ufpe.br/~wdbm/iai/domain.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:domain="http://localhost/iai/lista1/domain.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://cin.ufpe.br/~wdbm/iai/domain.owl">
+        <rdfs:label>Introducao a Agentes Inteligentes - Lista 1</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#formaPagamentoHotel -->
+
+    <owl:ObjectProperty rdf:about="&domain2;formaPagamentoHotel">
+        <rdfs:domain rdf:resource="&domain2;FormaPagamento"/>
+        <rdfs:range rdf:resource="&domain2;Hotel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#hotelFormaPagamento -->
+
+    <owl:ObjectProperty rdf:about="&domain2;hotelFormaPagamento">
+        <rdfs:range rdf:resource="&domain2;FormaPagamento"/>
+        <rdfs:domain rdf:resource="&domain2;Hotel"/>
+        <owl:inverseOf rdf:resource="&domain2;formaPagamentoHotel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#hotelQuarto -->
+
+    <owl:ObjectProperty rdf:about="&domain2;hotelQuarto">
+        <rdfs:domain rdf:resource="&domain2;Hotel"/>
+        <rdfs:range rdf:resource="&domain2;Quarto"/>
+        <owl:inverseOf rdf:resource="&domain2;quartoHotel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#quartoHotel -->
+
+    <owl:ObjectProperty rdf:about="&domain2;quartoHotel">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&domain2;Hotel"/>
+        <rdfs:domain rdf:resource="&domain2;Quarto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#avaliacaoHotel -->
+
+    <owl:DatatypeProperty rdf:about="&domain2;avaliacaoHotel">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&domain2;Hotel"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#dataAberturaHotel -->
+
+    <owl:DatatypeProperty rdf:about="&domain2;dataAberturaHotel">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&domain2;Hotel"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#dataFechamentoHotel -->
+
+    <owl:DatatypeProperty rdf:about="&domain2;dataFechamentoHotel">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&domain2;Hotel"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#vagasQuarto -->
+
+    <owl:DatatypeProperty rdf:about="&domain2;vagasQuarto">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&domain2;Quarto"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#FormaPagamento -->
+
+    <owl:Class rdf:about="&domain2;FormaPagamento"/>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Hotel -->
+
+    <owl:Class rdf:about="&domain2;Hotel"/>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto -->
+
+    <owl:Class rdf:about="&domain2;Quarto"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Hotel_001 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Hotel_001">
+        <rdf:type rdf:resource="&domain2;Hotel"/>
+        <rdfs:label xml:lang="en">Hotel 001</rdfs:label>
+        <domain2:dataAberturaHotel rdf:datatype="&xsd;dateTime">2014-01-01</domain2:dataAberturaHotel>
+        <domain2:dataFechamentoHotel rdf:datatype="&xsd;dateTime">2014-12-31</domain2:dataFechamentoHotel>
+        <domain2:avaliacaoHotel rdf:datatype="&xsd;int">5</domain2:avaliacaoHotel>
+        <domain2:hotelFormaPagamento rdf:resource="&domain2;cartao"/>
+        <domain2:hotelFormaPagamento rdf:resource="&domain2;cheque"/>
+        <domain2:hotelFormaPagamento rdf:resource="&domain2;dinheiro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Hotel_002 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Hotel_002">
+        <rdf:type rdf:resource="&domain2;Hotel"/>
+        <rdfs:label xml:lang="en">Hotel 002</rdfs:label>
+        <domain2:dataAberturaHotel rdf:datatype="&xsd;dateTime">2014-01-01</domain2:dataAberturaHotel>
+        <domain2:dataFechamentoHotel rdf:datatype="&xsd;dateTime">2014-04-30</domain2:dataFechamentoHotel>
+        <domain2:avaliacaoHotel rdf:datatype="&xsd;int">4</domain2:avaliacaoHotel>
+        <domain2:hotelFormaPagamento rdf:resource="&domain2;cartao"/>
+        <domain2:hotelFormaPagamento rdf:resource="&domain2;dinheiro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Hotel_003 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Hotel_003">
+        <rdf:type rdf:resource="&domain2;Hotel"/>
+        <rdfs:label xml:lang="en">Hotel 003</rdfs:label>
+        <domain2:dataAberturaHotel rdf:datatype="&xsd;dateTime">2014-05-01</domain2:dataAberturaHotel>
+        <domain2:dataFechamentoHotel rdf:datatype="&xsd;dateTime">2014-08-31</domain2:dataFechamentoHotel>
+        <domain2:avaliacaoHotel rdf:datatype="&xsd;int">3</domain2:avaliacaoHotel>
+        <domain2:hotelFormaPagamento rdf:resource="&domain2;cheque"/>
+        <domain2:hotelFormaPagamento rdf:resource="&domain2;dinheiro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Hotel_004 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Hotel_004">
+        <rdf:type rdf:resource="&domain2;Hotel"/>
+        <rdfs:label xml:lang="en">Hotel 004</rdfs:label>
+        <domain2:avaliacaoHotel rdf:datatype="&xsd;int">2</domain2:avaliacaoHotel>
+        <domain2:dataAberturaHotel rdf:datatype="&xsd;dateTime">2014-09-30</domain2:dataAberturaHotel>
+        <domain2:dataFechamentoHotel rdf:datatype="&xsd;dateTime">2014-12-31</domain2:dataFechamentoHotel>
+        <domain2:hotelFormaPagamento rdf:resource="&domain2;dinheiro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_001_101_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_001_101_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 001 - Quarto 101 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_001_102_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_001_102_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 001 - Quarto 102 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_001_103_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_001_103_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 001 - Quarto 103 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_001_104_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_001_104_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 001 - Quarto 104 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_101_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_101_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 101 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_102_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_102_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 102 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_103_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_103_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 103 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_104_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_104_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 104 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_105_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_105_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 105 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_106_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_106_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 106 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_201_4 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_201_4">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 201 - Vagas 4</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">4</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_202_4 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_202_4">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 202 - Vagas 4</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">4</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_203_4 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_203_4">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 203 - Vagas 4</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">4</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_204_4 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_204_4">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 204 - Vagas 4</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">4</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_205_4 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_205_4">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 205 - Vagas 4</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">4</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_002_206_4 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_002_206_4">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 002 - Quarto 206 - Vagas 4</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">4</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_101_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_101_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 101 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_102_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_102_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 102 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_103_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_103_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 103 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_104_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_104_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 104 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_201_4 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_201_4">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 201 - Vagas 4</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">4</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_202_4 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_202_4">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 202 - Vagas 4</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">4</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_203_4 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_203_4">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 203 - Vagas 4</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">4</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_204_4 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_204_4">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 204 - Vagas 4</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">4</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_301_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_301_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 301 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_302_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_302_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 302 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_303_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_303_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 303 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_003_304_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_003_304_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 003 - Quarto 304 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_101_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_101_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 101 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_102_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_102_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 102 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_103_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_103_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 103 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_104_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_104_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 104 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_105_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_105_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 105 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_106_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_106_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 106 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_107_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_107_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 107 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_108_2 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_108_2">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 108 - Vagas 2</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">2</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_201_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_201_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 201 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_202_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_202_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 202 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_203_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_203_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 203 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_204_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_204_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 204 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_205_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_205_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 205 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_206_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_206_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 206 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_207_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_207_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 207 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_208_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_208_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 208 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_301_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_301_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 301 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_302_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_302_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 302 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_303_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_303_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 303 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_304_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_304_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 304 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_305_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_305_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 305 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_306_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_306_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 306 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_307_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_307_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 307 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_308_1 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_308_1">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 308 - Vagas 1</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">1</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_401_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_401_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 401 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_402_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_402_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 402 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_403_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_403_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 403 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_404_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_404_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 404 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_405_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_405_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 405 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_406_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_406_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 406 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_407_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_407_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 407 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_408_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_408_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 408 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_501_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_501_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 501 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_502_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_502_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 502 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_503_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_503_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 503 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_504_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_504_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 504 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_505_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_505_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 505 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_506_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_506_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 506 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_507_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_507_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 507 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#Quarto_004_508_3 -->
+
+    <owl:NamedIndividual rdf:about="&domain2;Quarto_004_508_3">
+        <rdf:type rdf:resource="&domain2;Quarto"/>
+        <rdfs:label xml:lang="en">Hotel 004 - Quarto 508 - Vagas 3</rdfs:label>
+        <domain2:vagasQuarto rdf:datatype="&xsd;int">3</domain2:vagasQuarto>
+        <domain2:quartoHotel rdf:resource="&domain2;Hotel_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#cartao -->
+
+    <owl:NamedIndividual rdf:about="&domain2;cartao">
+        <rdf:type rdf:resource="&domain2;FormaPagamento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#cheque -->
+
+    <owl:NamedIndividual rdf:about="&domain2;cheque">
+        <rdf:type rdf:resource="&domain2;FormaPagamento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cin.ufpe.br/~wdbm/iai/domain.owl#dinheiro -->
+
+    <owl:NamedIndividual rdf:about="&domain2;dinheiro">
+        <rdf:type rdf:resource="&domain2;FormaPagamento"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
