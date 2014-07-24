@@ -15,12 +15,14 @@ output = ""
 
 #generating the classes
 for beerClass in xml[root]:
+
 	output += "<owl:Class rdf:ID=\"" + beerClass + "\">" + '\n'
 	output += "\t<rdfs:label xml:lang=\"en\">" + beerClass + "</rdfs:label>" + '\n'
 	
-	#generating the subclasses
+	#generating the first level of subclass
 	for subClass1 in xml[root][str(beerClass)]:
 		output += "\t<owl:Class rdf:ID=\"" + subClass1 + "\">" + '\n'
+		output += "\t\t<rdfs:label xml:lang=\"en\">" + subClass1 + "</rdfs:label>" + '\n'
 		output += "\t\t<rdfs:subClassOf rdf:resource=\"#" + beerClass + "\" />" + '\n'
 		output += "\t</owl:Class>" + '\n'
 	
