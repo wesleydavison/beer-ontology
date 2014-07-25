@@ -24,7 +24,7 @@ xml = xmltodict.parse(data)
 #Here we go!
 
 #append header
-output = "<?xml version=\"1.0\"?>\n" + \
+output = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" + \
 			ident(0) + "<rdf:RDF\n" + \
 				ident(1) + "xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n" + \
 				ident(1) + "xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n" + \
@@ -46,20 +46,20 @@ for beerClass in xml[root]:
 		output += ident(1) + "<owl:Class rdf:ID=\"" + subClass1.encode('utf-8') + "\">" + '\n'
 		output += ident(2) + "<rdfs:label xml:lang=\"en\"> " + subClass1.encode('utf-8') + " </rdfs:label>" + '\n'
 		output += ident(2) + "<rdfs:subClassOf>\n" 
-		output += ident(2) + "<owl:Class rdf:about=\"#" + beerClass.encode('utf-8') + "\"/>" + '\n'
-		output += ident(1) + "</rdfs:subClassOf>\n" 
+		output += ident(3) + "<owl:Class rdf:about=\"#" + beerClass.encode('utf-8') + "\"/>" + '\n'
+		output += ident(2) + "</rdfs:subClassOf>\n" 
+		output += ident(1) + "</owl:Class>" + '\n'
 
-		#generating second level of subclass
+		#generating second level of subclass (individuals)
 		for subClass2 in xml[root][str(beerClass)][subClass1]:
-			output += ident(1) + "<owl:Class rdf:ID=\"" + subClass2.encode('utf-8') + "\">" + '\n'
-			output += ident(2) + "<rdfs:label xml:lang=\"en\"> " + subClass2.encode('utf-8') + " </rdfs:label>" + '\n'
-			output += ident(2) + "<rdfs:subClassOf>\n" 
-			output += ident(2) + "<owl:Class rdf:about=\"#" + subClass1.encode('utf-8') + "\"/>" + '\n'
-			output += ident(1) + "</rdfs:subClassOf>\n" 
-
-	
-	#closing class
-	output += "</owl:Class>" + '\n'
+			if subClass2 == 'Samples':
+				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
+					output += ident(1) + "<owl:Class rdf:ID=\"" + subClass3.encode('utf-8') + "\">" + '\n'
+					output += ident(2) + "<rdfs:label xml:lang=\"en\"> " + subClass3.encode('utf-8') + " </rdfs:label>" + '\n'
+					output += ident(2) + "<rdfs:subClassOf>\n" 
+					output += ident(3) + "<owl:Class rdf:about=\"#" + subClass1.encode('utf-8') + "\"/>" + '\n'
+					output += ident(2) + "</rdfs:subClassOf>\n" 
+					output += ident(1) + "</owl:Class>" + '\n'
 
 #closing rdf root tag
 output +=  "</rdf:RDF>"
