@@ -40,7 +40,8 @@ for beerClass in xml[root]:
 	output += ident(1) + "<owl:Class rdf:ID=\"" + beerClass.encode('utf-8') + "\">" + '\n'
 	output += ident(2) + "<rdfs:label xml:lang=\"en\"> " + beerClass.encode('utf-8') + " </rdfs:label>" + '\n'
 	output += ident(1) + "</owl:Class>" + '\n'
-	
+	output += '\n'
+
 	#generating the first level of subclass
 	for subClass1 in xml[root][str(beerClass)]:
 		output += ident(1) + "<owl:Class rdf:ID=\"" + subClass1.encode('utf-8') + "\">" + '\n'
@@ -52,15 +53,19 @@ for beerClass in xml[root]:
 
 		#generating second level of subclass (individuals)
 		for subClass2 in xml[root][str(beerClass)][subClass1]:
+			#if subClass2 == 'Appearance'
+			#	for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
+			#		output += ident(1) + "<owl"
+			#		output += ident(1) + "<" + subClass1.encode('utf-8')+ " rdf:ID=\"" + subClass3.encode('utf-8') + "\">" + '\n'
+			#		output += ident(1) +  "</" + subClass1.encode('utf-8') + ">" + '\n'
 			if subClass2 == 'Samples':
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
-					output += ident(1) + "<owl:Class rdf:ID=\"" + subClass3.encode('utf-8') + "\">" + '\n'
-					output += ident(2) + "<rdfs:label xml:lang=\"en\"> " + subClass3.encode('utf-8') + " </rdfs:label>" + '\n'
-					output += ident(2) + "<rdfs:subClassOf>\n" 
-					output += ident(3) + "<owl:Class rdf:about=\"#" + subClass1.encode('utf-8') + "\"/>" + '\n'
-					output += ident(2) + "</rdfs:subClassOf>\n" 
-					output += ident(1) + "</owl:Class>" + '\n'
 
+					output += ident(1) + "<rdf:Description rdf:about=\"#" + subClass3.encode('utf-8') + "\">" + '\n'
+					output += ident(2) + "<rdf:type rdf:resource=\"#" + subClass1.encode('utf-8') + "\"/>" + '\n'
+					output += ident(1) + "</rdf:Description>" + '\n'
+
+		output += '\n'
 #closing rdf root tag
 output +=  "</rdf:RDF>"
 
