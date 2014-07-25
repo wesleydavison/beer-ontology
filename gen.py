@@ -49,15 +49,17 @@ for beerClass in xml[root]:
 		output += ident(2) + "<rdfs:subClassOf>\n" 
 		output += ident(3) + "<owl:Class rdf:about=\"#" + beerClass.encode('utf-8') + "\"/>" + '\n'
 		output += ident(2) + "</rdfs:subClassOf>\n" 
-		output += ident(1) + "</owl:Class>" + '\n'
 
 		#generating second level of subclass (individuals)
 		for subClass2 in xml[root][str(beerClass)][subClass1]:
-			#if subClass2 == 'Appearance'
-			#	for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
-			#		output += ident(1) + "<owl"
-			#		output += ident(1) + "<" + subClass1.encode('utf-8')+ " rdf:ID=\"" + subClass3.encode('utf-8') + "\">" + '\n'
-			#		output += ident(1) +  "</" + subClass1.encode('utf-8') + ">" + '\n'
+			if subClass2 == 'Appearance' \
+			   or subClass2 == 'Aroma-and-taste' \
+			   or subClass2 == 'Mouth-feel':
+				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
+					output += ident(2) + "<owl:onProperty>" + "\n"
+					output += ident(3) + "<owl:DatatypeProperty " + \
+										  "rdf:ID=\"" + subClass3.encode('utf-8') + "\"/>" + '\n'
+					output += ident(2) + "</owl:onProperty>" + "\n"
 			if subClass2 == 'Samples':
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
 
@@ -65,6 +67,7 @@ for beerClass in xml[root]:
 					output += ident(2) + "<rdf:type rdf:resource=\"#" + subClass1.encode('utf-8') + "\"/>" + '\n'
 					output += ident(1) + "</rdf:Description>" + '\n'
 
+		output += ident(1) + "</owl:Class>" + '\n'
 		output += '\n'
 #closing rdf root tag
 output +=  "</rdf:RDF>"
