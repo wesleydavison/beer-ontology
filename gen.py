@@ -73,12 +73,12 @@ for beerClass in xml[root]:
 
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
 					outSintaFile += "Regra " + subClass3 + "\n"
+					outSintaFile += ident(1) + "SE sub-classe de cerveja = " + subClass1.encode('utf-8') +  "\n"
 					firstTimeClass3 = True
 					for subClass4 in xml[root][str(beerClass)][subClass1][subClass2][subClass3]:
-						conditionClass3 = "SE " if firstTimeClass3 else "E "
-						outSintaFile += ident(1) + conditionClass3 + \
-									subClass4.encode('utf-8') + " = " + \
-									xml[root][str(beerClass)][subClass1][subClass2][subClass3][subClass4] + '\n'
+						outSintaFile += ident(1) + "E "+ \
+											subClass4.encode('utf-8') + " = " + \
+											xml[root][str(beerClass)][subClass1][subClass2][subClass3][subClass4] + '\n'
 						firstTimeClass3 = False		
 					outSintaFile += ident(1) + u"ENTÃO nome de cerveja = " + subClass3 + '\n\n'		
 
