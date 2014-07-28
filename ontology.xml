@@ -463,16 +463,6 @@
                     <Cheese_Pairing_Ideas>Triple Crème</Cheese_Pairing_Ideas>
                     <Food_Pairing_Ideas>dishes, roast game, pork and fish dishes</Food_Pairing_Ideas>
                 </Belgian_Strong_Pale_Ale>
-                <Lambic-Unblended>
-                    <Taste_Smell />
-                    <Alcohol_by_Volume_ABV_Range />
-                    <Bitterness_IBU />
-                    <Popular_Examples />
-                    <Serving_Temperature />
-                    <Glassware />
-                    <Cheese_Pairing_Ideas />
-                    <Food_Pairing_Ideas />
-                </Lambic-Unblended>
                 <Gueuze>
                     <Taste_Smell>Complex, Sour, Acidic, Barnyard, Light-bodied</Taste_Smell>
                     <Alcohol_by_Volume_ABV_Range>4 – 8%</Alcohol_by_Volume_ABV_Range>
@@ -493,16 +483,6 @@
                     <Cheese_Pairing_Ideas>Goat Cheese (Chèvre), Havarti, Monterey Jack, White Cheddar (mild), Edam, Swiss</Cheese_Pairing_Ideas>
                     <Food_Pairing_Ideas>A wide variety of light foods, including salads, crab, lobster, salmon and chicken, spicier Indian, Mexican, as well as fried foods</Food_Pairing_Ideas>
                 </Euro_Pale_Lager>
-                <Faro>
-                    <Taste_Smell />
-                    <Alcohol_by_Volume_ABV_Range />
-                    <Bitterness_IBU />
-                    <Popular_Examples />
-                    <Serving_Temperature />
-                    <Glassware />
-                    <Cheese_Pairing_Ideas />
-                    <Food_Pairing_Ideas />
-                </Faro>
                 <Belgian_Witbier>
                     <Taste_Smell>Fruity, Coriander, Orange Peel, Light-bodied</Taste_Smell>
                     <Alcohol_by_Volume_ABV_Range>4.8 – 5.2%</Alcohol_by_Volume_ABV_Range>
