@@ -15,8 +15,14 @@ def ident(level):
 
 #opening input and output files
 with open ("ontology.xml", "r") as myfile:
-    data=myfile.read()
-outFile=open('./ontology.owl', 'w+')
+    data = myfile.read()
+ontFile = open('./ontology.owl', 'w+')
+sintaFile = open("./expert-sinta-input.txt", 'w+')
+
+#pseudo-initialization of output strings
+outOntFile = ""
+outSintaFile = ""
+
 
 #parsing the XML file
 xml = xmltodict.parse(data)
@@ -24,7 +30,7 @@ xml = xmltodict.parse(data)
 #Here we go!
 
 #append header
-output = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" + \
+outOntFile = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" + \
 			ident(0) + "<rdf:RDF\n" + \
 				ident(1) + "xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n" + \
 				ident(1) + "xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n" + \
@@ -37,38 +43,41 @@ output = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" + \
 root = 'beer'
 for beerClass in xml[root]:
 
-	output += ident(1) + "<owl:Class rdf:about=\"#" + beerClass.encode('utf-8') + "\"/>" + '\n'
-	
-	output += '\n'
+	outOntFile += ident(1) + "<owl:Class rdf:about=\"#" + beerClass.encode('utf-8') + "\"/>" + '\n\n'
 
 	#generating the first level of subclass
 	for subClass1 in xml[root][str(beerClass)]:
-		output += ident(1) + "<owl:Class rdf:about=\"#" + subClass1.encode('utf-8') + "\">" + '\n'
-		output += ident(2) + "<rdfs:subClassOf rdf:resource=\"#" + beerClass.encode('utf-8') + "\"/>" + '\n'
-		output += ident(1) + "</owl:Class>" + '\n'
+		outOntFile += ident(1) + "<owl:Class rdf:about=\"#" + subClass1.encode('utf-8') + "\">" + '\n'
+		outOntFile += ident(2) + "<rdfs:subClassOf rdf:resource=\"#" + beerClass.encode('utf-8') + "\"/>" + '\n'
+		outOntFile += ident(1) + "</owl:Class>" + '\n'
 
+		outSintaFile +=  "Regra " + subClass1.encode('utf-8') + "\n"
+		firstTime = True
 		#generating second level of subclass (individuals)
 		for subClass2 in xml[root][str(beerClass)][subClass1]:
-			#if subClass2 == 'Appearance' \
-			#   or subClass2 == 'Aroma-and-taste' \
-			#   or subClass2 == 'Mouth-feel':
-			#	for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
-			#		output += ident(2) + "<owl:onProperty>" + "\n"
-			#		output += ident(3) + "<owl:DatatypeProperty " + \
-			#							  "rdf:ID=\"" + subClass3.encode('utf-8') + "\"/>" + '\n'
-			#		output += ident(2) + "</owl:onProperty>" + "\n"
+			if subClass2 == 'Appearance' \
+			   or subClass2 == 'Aroma-and-taste' \
+			   or subClass2 == 'Mouth-feel':
+				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
+					
+					condition = "SE " if firstTime else "E "
+					outSintaFile += ident(1) + condition + \
+									subClass3.encode('utf-8') + " = " + \
+									xml[root][str(beerClass)][subClass1][subClass2][subClass3] + '\n'
+					firstTime = False	
 			if subClass2 == 'Samples':
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
 
-					output += ident(1) + "<owl:NamedIndividual rdf:about=\"#" + subClass3.encode('utf-8') + "\">" + '\n'
-					output += ident(2) + "<rdf:type rdf:resource=\"#" + subClass1.encode('utf-8') + "\"/>" + '\n'
-					output += ident(2) + "<rdf:type rdf:resource=\"#" + beerClass.encode('utf-8') + "\"/>" + '\n'
-					output += ident(1) + "</owl:NamedIndividual>" + '\n'
+					outOntFile += ident(1) + "<owl:NamedIndividual rdf:about=\"#" + subClass3.encode('utf-8') + "\">" + '\n'
+					outOntFile += ident(2) + "<rdf:type rdf:resource=\"#" + subClass1.encode('utf-8') + "\"/>" + '\n'
+					outOntFile += ident(2) + "<rdf:type rdf:resource=\"#" + beerClass.encode('utf-8') + "\"/>" + '\n'
+					outOntFile += ident(1) + "</owl:NamedIndividual>" + '\n'
 
 		
-		output += '\n'
+		outOntFile += '\n'
 #closing rdf root tag
-output +=  "</rdf:RDF>"
+outOntFile +=  "</rdf:RDF>"
 
 #writing in file
-outFile.write(output)
+ontFile.write(outOntFile)
+sintaFile.write(outSintaFile.encode('utf-8'))
