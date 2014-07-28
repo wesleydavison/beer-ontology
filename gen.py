@@ -69,7 +69,7 @@ for beerClass in xml[root]:
 			
 			if subClass2 == 'Samples':
 				#no more conditions. Time to close Sinta rule 
-				outSintaFile += ident(1) + u"ENTÃO sub-classe de cerveja = " + subClass1.encode('utf-8') + '\n\n'
+				outSintaFile += ident(1) + u"ENTÃO sub-classe de cerveja = " + subClass1.encode('utf-8') + " CNF 100%" +'\n\n'
 
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
 					outSintaFile += "Regra " + subClass3 + "\n"
@@ -80,7 +80,7 @@ for beerClass in xml[root]:
 											subClass4.encode('utf-8') + " = " + \
 											xml[root][str(beerClass)][subClass1][subClass2][subClass3][subClass4] + '\n'
 						firstTimeClass3 = False		
-					outSintaFile += ident(1) + u"ENTÃO nome de cerveja = " + subClass3 + '\n\n'		
+					outSintaFile += ident(1) + u"ENTÃO nome de cerveja = " + subClass3 + " CNF 100%" + '\n\n'		
 
 					outOntFile += ident(1) + "<owl:NamedIndividual rdf:about=\"#" + subClass3.encode('utf-8') + "\">" + '\n'
 					outOntFile += ident(2) + "<rdf:type rdf:resource=\"#" + subClass1.encode('utf-8') + "\"/>" + '\n'
