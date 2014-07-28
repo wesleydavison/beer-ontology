@@ -1,4 +1,5 @@
 #!/usr/env/python
+# coding: utf-8
 '''
 Rule Generator to Expert SINTA engine
 
@@ -66,6 +67,9 @@ for beerClass in xml[root]:
 									xml[root][str(beerClass)][subClass1][subClass2][subClass3] + '\n'
 					firstTime = False	
 			if subClass2 == 'Samples':
+				#no more conditions. Time to close Sinta rule 
+				outSintaFile += ident(1) + u"ENTÃO sub-classe de cerveja = " + subClass1.encode('utf-8')
+
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
 
 					outOntFile += ident(1) + "<owl:NamedIndividual rdf:about=\"#" + subClass3.encode('utf-8') + "\">" + '\n'
