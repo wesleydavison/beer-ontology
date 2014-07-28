@@ -20,9 +20,11 @@ with open ("ontology.xml", "r") as myfile:
 ontFile = open('./ontology.owl', 'w+')
 sintaFile = open("./expert-sinta-input.txt", 'w+')
 
-#pseudo-initialization of output strings
+#pseudo-initialization of variables
 outOntFile = ""
 outSintaFile = ""
+ruleCounter = 0
+
 
 
 #parsing the XML file
@@ -52,7 +54,9 @@ for beerClass in xml[root]:
 		outOntFile += ident(2) + "<rdfs:subClassOf rdf:resource=\"#" + beerClass.encode('utf-8') + "\"/>" + '\n'
 		outOntFile += ident(1) + "</owl:Class>" + '\n'
 
-		outSintaFile +=  "Regra " + subClass1.encode('utf-8') + "\n"
+		ruleCounter += 1
+		outSintaFile += "==========  Regra " + str(ruleCounter) + "==========\n"
+		outSintaFile +=  "Regra " + subClass1.encode('utf-8') + "\n" 
 		firstTimeClass2 = True
 		#generating second level of subclass (individuals)
 		for subClass2 in xml[root][str(beerClass)][subClass1]:
@@ -72,6 +76,8 @@ for beerClass in xml[root]:
 				outSintaFile += u"ENTÃO\n" + ident(1) + "sub-classe de cerveja = " + subClass1.encode('utf-8') + " CNF 100%" +'\n\n'
 
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
+					ruleCounter += 1
+					outSintaFile += "==========  Regra " + str(ruleCounter) + "==========\n"
 					outSintaFile += "Regra " + subClass3 + "\n"
 					outSintaFile += "SE\n" + ident(1) + "sub-classe de cerveja = " + subClass1.encode('utf-8') +  "\n"
 					firstTimeClass3 = True
