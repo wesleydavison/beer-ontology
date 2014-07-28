@@ -53,7 +53,7 @@ for beerClass in xml[root]:
 		outOntFile += ident(1) + "</owl:Class>" + '\n'
 
 		outSintaFile +=  "Regra " + subClass1.encode('utf-8') + "\n"
-		firstTime = True
+		firstTimeClass2 = True
 		#generating second level of subclass (individuals)
 		for subClass2 in xml[root][str(beerClass)][subClass1]:
 			if subClass2 == 'Appearance' \
@@ -61,16 +61,26 @@ for beerClass in xml[root]:
 			   or subClass2 == 'Mouth-feel':
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
 					
-					condition = "SE " if firstTime else "E "
-					outSintaFile += ident(1) + condition + \
+					conditionClass2 = "SE " if firstTimeClass2 else "E "
+					outSintaFile += ident(1) + conditionClass2 + \
 									subClass3.encode('utf-8') + " = " + \
 									xml[root][str(beerClass)][subClass1][subClass2][subClass3] + '\n'
-					firstTime = False	
+					firstTimeClass2 = False	
+			
 			if subClass2 == 'Samples':
 				#no more conditions. Time to close Sinta rule 
 				outSintaFile += ident(1) + u"ENTÃO sub-classe de cerveja = " + subClass1.encode('utf-8') + '\n\n'
 
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
+					outSintaFile += "Regra " + subClass3 + "\n"
+					firstTimeClass3 = True
+					for subClass4 in xml[root][str(beerClass)][subClass1][subClass2][subClass3]:
+						conditionClass3 = "SE " if firstTimeClass3 else "E "
+						outSintaFile += ident(1) + conditionClass3 + \
+									subClass4.encode('utf-8') + " = " + \
+									xml[root][str(beerClass)][subClass1][subClass2][subClass3][subClass4] + '\n'
+						firstTimeClass3 = False		
+					outSintaFile += ident(1) + u"ENTÃO nome de cerveja = " + subClass3 + '\n\n'		
 
 					outOntFile += ident(1) + "<owl:NamedIndividual rdf:about=\"#" + subClass3.encode('utf-8') + "\">" + '\n'
 					outOntFile += ident(2) + "<rdf:type rdf:resource=\"#" + subClass1.encode('utf-8') + "\"/>" + '\n'
