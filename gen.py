@@ -68,7 +68,7 @@ for beerClass in xml[root]:
 					firstTime = False	
 			if subClass2 == 'Samples':
 				#no more conditions. Time to close Sinta rule 
-				outSintaFile += ident(1) + u"ENTÃO sub-classe de cerveja = " + subClass1.encode('utf-8')
+				outSintaFile += ident(1) + u"ENTÃO sub-classe de cerveja = " + subClass1.encode('utf-8') + '\n\n'
 
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
 
