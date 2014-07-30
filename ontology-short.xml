@@ -14,7 +14,7 @@
             <Samples>
                 <Kölsch>
                     <Taste_Smell>Crisp,Grainy,Floral,Light-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.5 – 5.5%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>4.5–5.5</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>20-28</Bitterness_IBU>
                     <Serving_Temperature>39-45</Serving_Temperature>
                     <Glassware>Stange,pilsner,pint,nonic</Glassware>
@@ -23,12 +23,11 @@
                 </Kölsch>
                 <Extra_Special_Bitter>
                     <Taste_Smell>Malty,Earthy,Balanced,Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>4.5–6.5</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>30-50</Bitterness_IBU>
                     <Serving_Temperature>Cellar,55-57</Serving_Temperature>
                     <Glassware>Pint,nonic,mug</Glassware>
                     <Cheese_Pairing_Ideas>Asiago,Derby,Gouda,Havarti, Lancashire,Leicester</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Fish &amp; chips, pork, roast chicken, lamb, barbecue, fried foods, pizza</Food_Pairing_Ideas>
                 </Extra_Special_Bitter>
             </Samples>
         </Blonde_and_Golden>
@@ -38,29 +37,28 @@
                 <Head>Fluffy</Head>
             </Appearance>
             <Mouth-feel>
-                <Consistency>Crisp, yet smooth</Consistency>
+                <Consistency>Crisp</Consistency>
                 <Carbonation>Creamy, round</Carbonation>
-                <Body>Light to medium</Body>
+                <Body>Light,medium</Body>
                 <Finish>Long</Finish>
             </Mouth-feel>
             <Samples>
                 <Weizenbock>
                     <Taste_Smell>Malty, Wheat, Spicy, Fruity, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>6.9 – 9.3%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>6.9 – 9.3</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>15-35</Bitterness_IBU>
-                    <Serving_Temperature>Cool 46-54°</Serving_Temperature>
+                    <Serving_Temperature>46-54</Serving_Temperature>
                     <Glassware>Weizen Glass, Chalice</Glassware>
-                    <Cheese_Pairing_Ideas>Gouda (including smoked), Manchego</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Beef, roast pork, smoked ham, German-style dishes, desserts and chocolates</Food_Pairing_Ideas>
+                    <Cheese_Pairing_Ideas>Gouda, Manchego</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Beef, roast pork, smoked ham, German-style dishes, desserts , chocolates</Food_Pairing_Ideas>
                 </Weizenbock>
                 <Witbier>
                     <Taste_Smell>Fruity, Coriander, Orange peel, Light-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.8 – 5.2%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>4.8 – 5.2</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>10 – 17</Bitterness_IBU>
-                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
-                    <Glassware>Pint or Nonic, Tumbler, Beer Mug</Glassware>
-                    <Cheese_Pairing_Ideas>Edam, Feta, Goat Cheese (Chèvre), Mascarpone, Mozzarella</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Salads with light and vinaigrette dressings, light seafood dishes, mussels, sushi, lightly seasoned poultry and apple glazed pork</Food_Pairing_Ideas>
+                    <Serving_Temperature>46-54</Serving_Temperature>
+                    <Glassware>Pint,Nonic, Tumbler, Beer Mug</Glassware>
+                    <Cheese_Pairing_Ideas>Edam, Feta, Goat Cheese, Mascarpone, Mozzarella</Cheese_Pairing_Ideas>
                 </Witbier>
             </Samples>
         </Wheat_Beer>
@@ -83,7 +81,6 @@
                     <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
                     <Glassware>Pint or nonic, beer mug</Glassware>
                     <Cheese_Pairing_Ideas>Dubliner, Goat Cheese (Chèvre), St. Nectaire</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Lamb, light fish dishes, French onion soup, roast beef and barbecue</Food_Pairing_Ideas>
                 </Irish_Red_Ale>
                 <American_Amber>
                     <Taste_Smell>Malty, Toasty, Caramel, Toffee, Medium-bodied</Taste_Smell>
@@ -92,7 +89,6 @@
                     <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
                     <Glassware>Pint or nonic, beer mug</Glassware>
                     <Cheese_Pairing_Ideas>Cheddar, Gouda, Münster, Pecorino</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Burgers, barbecue, game, seafood, chicken, spicy dishes and pasta</Food_Pairing_Ideas>
                 </American_Amber>
             </Samples>
         </IPA_and_Pale_Ale>
@@ -116,7 +112,6 @@
                     <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
                     <Glassware>Pint or nonic, tumbler, beer mug</Glassware>
                     <Cheese_Pairing_Ideas>Asiago, Cheshire, Colby, Emmental, Gloucester, Gouda, Gruyère</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Beef stew, grilled and roast meats, pork and sausage</Food_Pairing_Ideas>
                 </English_Dark_Mild_Ale>
                 <English_Brown_Ale>
                     <Taste_Smell>Malty, Nutty, Caramel, Bready, Medium-bodied</Taste_Smell>
@@ -125,7 +120,6 @@
                     <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
                     <Glassware>Pint or nonic, tumbler, beer mug</Glassware>
                     <Cheese_Pairing_Ideas>Asiago, Cheshire, Colby, Emmental, Gloucester, Gouda, Gruyère.</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Beef stew, grilled and roasted meats, pork and sausage</Food_Pairing_Ideas>
                 </English_Brown_Ale>
             </Samples>
         </Brown_Ale>
@@ -148,7 +142,6 @@
                     <Serving_Temperature>Cellar, 55-57°</Serving_Temperature>
                     <Glassware>Pint or nonic, tumbler, beer snifter</Glassware>
                     <Cheese_Pairing_Ideas>Cheddar (aged), Gouda (aged), Roquefort</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Smoked foul and cheesecake</Food_Pairing_Ideas>
                 </Russian_Imperial_Stout>
                 <Foreign>
                     <Taste_Smell>Malty, Bitter-Sweet, Roasty, Full-bodied</Taste_Smell>
@@ -158,7 +151,6 @@
                     <Serving_Temperature>Cellar 55-57°</Serving_Temperature>
                     <Glassware>Pint or nonic, beer snifter</Glassware>
                     <Cheese_Pairing_Ideas>Blue Cheese, Dubliner Cheddar</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Shepherd’s pie, steak and raw oysters</Food_Pairing_Ideas>
                 </Foreign>
             </Samples>
         </Stout>
@@ -191,7 +183,6 @@
                     <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
                     <Glassware>Stemmed tulip, chalice, large wine glass</Glassware>
                     <Cheese_Pairing_Ideas>Blue Cheese, Cheddar, Edam, Gorgonzola</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Spicy seafood dishes and fried foods</Food_Pairing_Ideas>
                 </Belgian_IPA>
             </Samples>
         </Belgian>
@@ -214,7 +205,6 @@
                     <Serving_Temperature>Cold, 46-54° to cellar 55-57°</Serving_Temperature>
                     <Glassware>Pint or nonic</Glassware>
                     <Cheese_Pairing_Ideas>Asiago, Brie, Colby, Emmental, Gloucester, Gouda (aged), Gruyère</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Roasted, smoked and barbecued foods, including beef, poultry, seafood, sausage, chili and hearty stews. Try with cheesecake for dessert</Food_Pairing_Ideas>
                 </English_Porter>
                 <American_Porter>
                     <Taste_Smell>Malty, Complex, Roasty, Chocolaty, Medium-bodied</Taste_Smell>
@@ -223,7 +213,6 @@
                     <Serving_Temperature>Cool, 46-54° to Cellar, 55-57°</Serving_Temperature>
                     <Glassware>Pint or nonic, beer mug</Glassware>
                     <Cheese_Pairing_Ideas>Asiago, Brie, Colby, Gloucester. Emmental, Gouda (aged), Gruyère with milder American Porters</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Roasted, smoked and barbecued foods, including beef, poultry, seafood, sausage, chili and hearty stews. Try with cheesecake for dessert</Food_Pairing_Ideas>
                 </American_Porter>
             </Samples>
         </Porter>
