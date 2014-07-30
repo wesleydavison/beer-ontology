@@ -3,19 +3,16 @@
     <Ale>
         <Blonde_and_Golden>
             <Appearance>
-                <Color>Blonde and golden to deep golden-copper</Color>
-                <Head>White to off-white, fizzy to creamy and delicate to generally lasting</Head>
+                <Color>Blonde and golden,deep golden-copper</Color>
             </Appearance>
             <Aroma-and-taste>
-                <Malts>Generally bready and sweet, leaning biscuity in Kölsch and Blonde, to caramel in ESB</Malts>
-                <Hops>Low to moderate aroma and flavor of Noble hop variety in Kölsch and any variety in Blonde, and earthy English hop character in ESB</Hops>
-                <Yeast>Fruity esters generally low in Kölsch, moderate in Blonde and moderate to high in ESB</Yeast>
+                <Malts>bready and sweet,blonde,caramel</Malts>
             </Aroma-and-taste>
             <Mouth-feel>
-                <Consistency>Smooth, with a crispness to Kölsch and some Blondes</Consistency>
-                <Carbonation>Light to spritzy</Carbonation>
-                <Body>Light to medium-full</Body>
-                <Finish>Average to long</Finish>
+                <Consistency>Smooth</Consistency>
+                <Carbonation>Light,spritzy</Carbonation>
+                <Body>Light,medium-full</Body>
+                <Finish>Average,long</Finish>
             </Mouth-feel>
             <Samples>
                 <Kölsch>

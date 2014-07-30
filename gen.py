@@ -15,9 +15,9 @@ def ident(level):
 	return ret
 
 #opening input and output files
-with open ("ontology.xml", "r") as myfile:
+with open ("ontology-short.xml", "r") as myfile:
     data = myfile.read()
-ontFile = open('./ontology.owl', 'w+')
+ontFile = open('./ontology-short.owl', 'w+')
 sintaFile = open("./expert-sinta-input.txt", 'w+')
 
 #pseudo-initialization of variables
@@ -57,19 +57,23 @@ for beerClass in xml[root]:
 		ruleCounter += 1
 		outSintaFile += "==========  Regra " + str(ruleCounter) + "==========\n"
 		outSintaFile +=  "Regra " + subClass1.encode('utf-8') + "\n" 
-		firstTimeClass2 = True
+		firstTimeClass3 = True
 		#generating second level of subclass (individuals)
+		outSintaFile += "S"
 		for subClass2 in xml[root][str(beerClass)][subClass1]:
 			if subClass2 == 'Appearance' \
 			   or subClass2 == 'Aroma-and-taste' \
 			   or subClass2 == 'Mouth-feel':
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
+					attributes = xml[root][str(beerClass)][subClass1][subClass2][subClass3].split(',') 
 					
-					conditionClass2 = "SE" if firstTimeClass2 else "E"
-					outSintaFile += conditionClass2 + "\n" + ident(1) +\
-									subClass3.encode('utf-8') + " = " + \
-									xml[root][str(beerClass)][subClass1][subClass2][subClass3] + '\n'
-					firstTimeClass2 = False	
+					for attr in attributes:
+						conditionClass2 = "E" if firstTimeClass3 else "OU"
+						outSintaFile += conditionClass2 + "\n" + ident(1) +\
+										subClass3.encode('utf-8') + " = " + \
+										attr + '\n'
+						firstTimeClass3 = False	
+					firstTimeClass3 = True
 			
 			if subClass2 == 'Samples':
 				#no more conditions. Time to close Sinta rule 
