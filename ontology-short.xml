@@ -3,212 +3,212 @@
     <Ale>
         <Blonde_and_Golden>
             <Appearance>
-                <Color>Blonde and golden,deep golden-copper</Color>
+                <Color>blonde,golden,deep_golden_copper</Color>
             </Appearance>
-            <Mouth-feel>
-                <Consistency>Smooth</Consistency>
-                <Carbonation>Light,spritzy</Carbonation>
-                <Body>Light,medium-full</Body>
-                <Finish>Average,long</Finish>
-            </Mouth-feel>
+            <Mouth_feel>
+                <Consistency>smooth</Consistency>
+                <Carbonation>light,spritzy</Carbonation>
+                <Body>light,medium_full</Body>
+                <Finish>average,long</Finish>
+            </Mouth_feel>
             <Samples>
                 <Kölsch>
-                    <Taste_Smell>Crisp,Grainy,Floral,Light-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.5–5.5</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>crisp,grainy,floral,light</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.5-5.5</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>20-28</Bitterness_IBU>
                     <Serving_Temperature>39-45</Serving_Temperature>
-                    <Glassware>Stange,pilsner,pint,nonic</Glassware>
-                    <Cheese_Pairing_Ideas>Brick,Brie,Camembert,Edam, Monterey Jack</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>German dishes, salads, chicken dishes, grilled foods, fish, shellfish, spicy foods</Food_Pairing_Ideas>
+                    <Glassware>stange,pilsner,pint,nonic</Glassware>
+                    <Cheese_Pairing_Ideas>brick,brie,camembert,edam,monterey_jack</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>german,salads,chicken,grilled,fish,shellfish,spicy</Food_Pairing_Ideas>
                 </Kölsch>
                 <Extra_Special_Bitter>
-                    <Taste_Smell>Malty,Earthy,Balanced,Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.5–6.5</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>malty,earthy,balanced,medium</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.5-6.5</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>30-50</Bitterness_IBU>
-                    <Serving_Temperature>Cellar,55-57</Serving_Temperature>
-                    <Glassware>Pint,nonic,mug</Glassware>
-                    <Cheese_Pairing_Ideas>Asiago,Derby,Gouda,Havarti, Lancashire,Leicester</Cheese_Pairing_Ideas>
+                    <Serving_Temperature>cellar,55-57</Serving_Temperature>
+                    <Glassware>pint,nonic,mug</Glassware>
+                    <Cheese_Pairing_Ideas>asiago,derby,gouda,havarti,lancashire,leicester</Cheese_Pairing_Ideas>
                 </Extra_Special_Bitter>
             </Samples>
         </Blonde_and_Golden>
         <Wheat_Beer>
             <Appearance>
-                <Color>Very Pale</Color>
-                <Head>Fluffy</Head>
+                <Color>very_pale</Color>
+                <Head>fluffy</Head>
             </Appearance>
-            <Mouth-feel>
-                <Consistency>Crisp</Consistency>
-                <Carbonation>Creamy, round</Carbonation>
-                <Body>Light,medium</Body>
-                <Finish>Long</Finish>
-            </Mouth-feel>
+            <Mouth_feel>
+                <Consistency>crisp</Consistency>
+                <Carbonation>creamy,round</Carbonation>
+                <Body>light,medium</Body>
+                <Finish>long</Finish>
+            </Mouth_feel>
             <Samples>
                 <Weizenbock>
-                    <Taste_Smell>Malty, Wheat, Spicy, Fruity, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>6.9 – 9.3</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>malty,wheat,spicy,fruity,medium</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>6.9-9.3</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>15-35</Bitterness_IBU>
                     <Serving_Temperature>46-54</Serving_Temperature>
-                    <Glassware>Weizen Glass, Chalice</Glassware>
-                    <Cheese_Pairing_Ideas>Gouda, Manchego</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Beef, roast pork, smoked ham, German-style dishes, desserts , chocolates</Food_Pairing_Ideas>
+                    <Glassware>weizen_glass,chalice</Glassware>
+                    <Cheese_Pairing_Ideas>gouda,manchego</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>beef,roast_pork,smoked_ham,german,desserts,chocolates</Food_Pairing_Ideas>
                 </Weizenbock>
                 <Witbier>
-                    <Taste_Smell>Fruity, Coriander, Orange peel, Light-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.8 – 5.2</Alcohol_by_Volume_ABV_Range>
-                    <Bitterness_IBU>10 – 17</Bitterness_IBU>
+                    <Taste_Smell>fruity,coriander,orange_peel,light</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.8-5.2</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>10-17</Bitterness_IBU>
                     <Serving_Temperature>46-54</Serving_Temperature>
-                    <Glassware>Pint,Nonic, Tumbler, Beer Mug</Glassware>
-                    <Cheese_Pairing_Ideas>Edam, Feta, Goat Cheese, Mascarpone, Mozzarella</Cheese_Pairing_Ideas>
+                    <Glassware>pint,nonic,tumbler,beer_mug</Glassware>
+                    <Cheese_Pairing_Ideas>edam,feta,goat,mascarpone,mozzarella</Cheese_Pairing_Ideas>
                 </Witbier>
             </Samples>
         </Wheat_Beer>
         <IPA_and_Pale_Ale>
             <Appearance>
-                <Color>Deep golden,amber,copper</Color>
-                <Head>white, creamy,lasting</Head>
+                <Color>deep_golden,amber,copper</Color>
+                <Head>white,creamy,lasting</Head>
             </Appearance>
-            <Mouth-feel>
-                <Consistency>Smooth,creamy, crisp</Consistency>
-                <Carbonation>Round</Carbonation>
-                <Body>Light,medium-full</Body>
-                <Finish>Average,long</Finish>
-            </Mouth-feel>
+            <Mouth_feel>
+                <Consistency>smooth,creamy,crisp</Consistency>
+                <Carbonation>round</Carbonation>
+                <Body>light,medium_full</Body>
+                <Finish>average,long</Finish>
+            </Mouth_feel>
             <Samples>
                 <Irish_Red_Ale>
-                    <Taste_Smell>Malty, Toasty, Caramel, Toffee, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4 – 6</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>malty,toasty,caramel,toffee,medium</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4-6</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>18-28</Bitterness_IBU>
                     <Serving_Temperature>46-54</Serving_Temperature>
-                    <Glassware>Pint,nonic, beer mug</Glassware>
-                    <Cheese_Pairing_Ideas>Dubliner, Goat Cheese (Chèvre), St. Nectaire</Cheese_Pairing_Ideas>
+                    <Glassware>pint,nonic,mug</Glassware>
+                    <Cheese_Pairing_Ideas>dubliner,goat_chevre,st_nectaire</Cheese_Pairing_Ideas>
                 </Irish_Red_Ale>
                 <American_Amber>
-                    <Taste_Smell>Malty, Toasty, Caramel, Toffee, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>malty,toasty,caramel,toffee,medium</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.5-6.5</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>25-40</Bitterness_IBU>
                     <Serving_Temperature>46-54</Serving_Temperature>
-                    <Glassware>Pint,nonic, beer mug</Glassware>
-                    <Cheese_Pairing_Ideas>Cheddar, Gouda, Münster, Pecorino</Cheese_Pairing_Ideas>
+                    <Glassware>pint,nonic,mug</Glassware>
+                    <Cheese_Pairing_Ideas>cheddar,gouda,munster,pecorino</Cheese_Pairing_Ideas>
                 </American_Amber>
             </Samples>
         </IPA_and_Pale_Ale>
         <Brown_Ale>
             <Appearance>
-                <Color>Reddish-copper,dark brown</Color>
-                <Head>Moderate, rocky, tan-colored</Head>
+                <Color>reddish_copper,dark_brown</Color>
+                <Head>moderate,rocky,tan_colored</Head>
             </Appearance>
-            <Mouth-feel>
-                <Consistency>Smooth</Consistency>
-                <Carbonation>Delicate,spritzy</Carbonation>
-                <Body>Light,medium ,medium-full</Body>
-                <Finish>Average</Finish>
-            </Mouth-feel>
+            <Mouth_feel>
+                <Consistency>smooth</Consistency>
+                <Carbonation>delicate,spritzy</Carbonation>
+                <Body>light,medium,medium_full</Body>
+                <Finish>average</Finish>
+            </Mouth_feel>
             <Samples>
                 <English_Dark_Mild_Ale>
-                    <Taste_Smell>Malty, Caramel, Fruity, Light- Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>3 – 4.5</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>malty,caramel,fruity,light_ medium</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>3-4.5</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>10-25</Bitterness_IBU>
                     <Serving_Temperature>46-54</Serving_Temperature>
-                    <Glassware>Pint,nonic, tumbler, beer mug</Glassware>
-                    <Cheese_Pairing_Ideas>Asiago, Cheshire, Colby, Emmental, Gloucester, Gouda, Gruyère</Cheese_Pairing_Ideas>
+                    <Glassware>pint,nonic,tumbler,mug</Glassware>
+                    <Cheese_Pairing_Ideas>asiago,cheshire,colby,emmental,gloucester,gouda,gruyere</Cheese_Pairing_Ideas>
                 </English_Dark_Mild_Ale>
                 <English_Brown_Ale>
-                    <Taste_Smell>Malty, Nutty, Caramel, Bready, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.25 – 5.8</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>malty,nutty,caramel,bready,medium</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.25-5.8</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>20-30</Bitterness_IBU>
                     <Serving_Temperature>46-54</Serving_Temperature>
-                    <Glassware>Pint,nonic, tumbler, beer mug</Glassware>
-                    <Cheese_Pairing_Ideas>Asiago, Cheshire, Colby, Emmental, Gloucester, Gouda, Gruyère.</Cheese_Pairing_Ideas>
+                    <Glassware>pint,nonic,tumbler,mug</Glassware>
+                    <Cheese_Pairing_Ideas>asiago,cheshire,colby,emmental,gloucester,gouda,gruyere</Cheese_Pairing_Ideas>
                 </English_Brown_Ale>
             </Samples>
         </Brown_Ale>
         <Stout>
             <Appearance>
-                <Color>Medium brown,black</Color>
-                <Head>Creamy</Head>
+                <Color>medium_brown,black</Color>
+                <Head>creamy</Head>
             </Appearance>
-            <Mouth-feel>
-                <Consistency>Smooth, velvety, silky, chewy</Consistency>
-                <Carbonation>Delicate,round</Carbonation>
-                <Body>Medium,full</Body>
-                <Finish>Long,everlasting, dry,wet</Finish>
-            </Mouth-feel>
+            <Mouth_feel>
+                <Consistency>smooth,velvety,silky,chewy</Consistency>
+                <Carbonation>delicate,round</Carbonation>
+                <Body>medium,full</Body>
+                <Finish>long,everlasting,dry,wet</Finish>
+            </Mouth_feel>
             <Samples>
                 <Russian_Imperial_Stout>
-                    <Taste_Smell>Balanced, Rich, Malty, Dark Fruit, Full-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>7 – 12</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>balanced,rich,malty,dark_fruit,full</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>7-12</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>45-80</Bitterness_IBU>
                     <Serving_Temperature>55-57</Serving_Temperature>
-                    <Glassware>Pint,nonic, tumbler, beer snifter</Glassware>
-                    <Cheese_Pairing_Ideas>Cheddar (aged), Gouda (aged), Roquefort</Cheese_Pairing_Ideas>
+                    <Glassware>pint,nonic,tumbler,snifter</Glassware>
+                    <Cheese_Pairing_Ideas>cheddar,gouda,roquefort</Cheese_Pairing_Ideas>
                 </Russian_Imperial_Stout>
                 <Foreign>
-                    <Taste_Smell>Malty, Bitter-Sweet, Roasty, Full-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>6 – 9</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>malty,bitter_sweet,roasty,full</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>6-9</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>30-65</Bitterness_IBU>
                     <Serving_Temperature>55-57</Serving_Temperature>
-                    <Glassware>Pint,nonic, beer snifter</Glassware>
-                    <Cheese_Pairing_Ideas>Blue Cheese, Dubliner Cheddar</Cheese_Pairing_Ideas>
+                    <Glassware>pint,nonic,snifter</Glassware>
+                    <Cheese_Pairing_Ideas>blue,dubliner_cheddar</Cheese_Pairing_Ideas>
                 </Foreign>
             </Samples>
         </Stout>
         <Belgian>
             <Appearance>
-                <Color>Pale blonde,dark brown</Color>
-                <Head>Fluffy</Head>
+                <Color>pale_blonde,dark_brown</Color>
+                <Head>fluffy</Head>
             </Appearance>
-            <Mouth-feel>
-                <Consistency>Crisp,silky</Consistency>
-                <Carbonation>Round</Carbonation>
-                <Body>Light,medium-full</Body>
-                <Finish>Long</Finish>
-            </Mouth-feel>
+            <Mouth_feel>
+                <Consistency>crisp,silky</Consistency>
+                <Carbonation>round</Carbonation>
+                <Body>light,medium_full</Body>
+                <Finish>long</Finish>
+            </Mouth_feel>
             <Samples>
-                <Bière_De_Garde>
-                    <Taste_Smell>Balanced, Malty, Fruity, Earthy, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>5.5 – 8</Alcohol_by_Volume_ABV_Range>
+                <Biere_De_Garde>
+                    <Taste_Smell>balanced,malty,fruity,earthy,medium</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>5.5-8</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>25-30</Bitterness_IBU>
                     <Serving_Temperature>46-57</Serving_Temperature>
-                    <Glassware>Stemmed tulip, large wine glass</Glassware>
-                    <Cheese_Pairing_Ideas>Asiago, Brie, Camembert, Colby, Edam, Feta, Munster, White Cheddar (mild)</Cheese_Pairing_Ideas>
-                </Bière_De_Garde>
+                    <Glassware>stemmed_tulip,large_wine_glass</Glassware>
+                    <Cheese_Pairing_Ideas>asiago,brie,camembert,colby,edam,feta,munster,white_cheddar_mild</Cheese_Pairing_Ideas>
+                </Biere_De_Garde>
                 <Belgian_IPA>
-                    <Taste_Smell>Hoppy, Fruity Esters, Spicy, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>6 – 12</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>hoppy,fruity_esters,spicy,medium</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>6-12</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>50-80</Bitterness_IBU>
                     <Serving_Temperature>46-54</Serving_Temperature>
-                    <Glassware>Stemmed tulip, chalice, large wine glass</Glassware>
-                    <Cheese_Pairing_Ideas>Blue Cheese, Cheddar, Edam, Gorgonzola</Cheese_Pairing_Ideas>
+                    <Glassware>stemmed_tulip,chalice,large_wine_glass</Glassware>
+                    <Cheese_Pairing_Ideas>blue,cheddar,edam,gorgonzola</Cheese_Pairing_Ideas>
                 </Belgian_IPA>
             </Samples>
         </Belgian>
         <Porter>
             <Appearance>
-                <Color>Dark-copper,dark brown</Color>
-                <Head>Off-white,tan</Head>
+                <Color>dark_copper,dark_brown</Color>
+                <Head>off_white,tan</Head>
             </Appearance>
-            <Mouth-feel>
-                <Consistency>Smooth</Consistency>
+            <Mouth_feel>
+                <Consistency>smooth</Consistency>
                 <Carbonation>delicate,spritzy</Carbonation>
-                <Body>Medium,full</Body>
-                <Finish>Long,dry</Finish>
-            </Mouth-feel>
+                <Body>medium,full</Body>
+                <Finish>long,dry</Finish>
+            </Mouth_feel>
             <Samples>
                 <English_Porter>
-                    <Taste_Smell>Malty, Toffee, Chocolaty, Toasty, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>malty,toffee,chocolaty,toasty,medium</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.5-6.5</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>20-50</Bitterness_IBU>
                     <Serving_Temperature>46-57</Serving_Temperature>
-                    <Glassware>Pint,nonic</Glassware>
-                    <Cheese_Pairing_Ideas>Asiago, Brie, Colby, Emmental, Gloucester, Gouda (aged), Gruyère</Cheese_Pairing_Ideas>
+                    <Glassware>pint,nonic</Glassware>
+                    <Cheese_Pairing_Ideas>asiago,brie,colby,emmental,gloucester,gouda,gruyere</Cheese_Pairing_Ideas>
                 </English_Porter>
                 <American_Porter>
-                    <Taste_Smell>Malty, Complex, Roasty, Chocolaty, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.5 - 10</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>malty,complex,roasty,chocolaty,medium</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.5-10</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>20-50</Bitterness_IBU>
                     <Serving_Temperature>46-57</Serving_Temperature>
-                    <Glassware>Pint,nonic, beer mug</Glassware>
-                    <Cheese_Pairing_Ideas>Asiago, Brie, Colby, Gloucester. Emmental, Gouda (aged), Gruyère with milder American Porters</Cheese_Pairing_Ideas>
+                    <Glassware>pint,nonic,mug</Glassware>
+                    <Cheese_Pairing_Ideas>asiago,brie,colby,gloucester,emmental,gouda,gruyere</Cheese_Pairing_Ideas>
                 </American_Porter>
             </Samples>
         </Porter>
