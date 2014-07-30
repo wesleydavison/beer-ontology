@@ -64,123 +64,119 @@
         </Wheat_Beer>
         <IPA_and_Pale_Ale>
             <Appearance>
-                <Color>Deep golden to amber to copper</Color>
-                <Head>Generally white, creamy and lasting</Head>
+                <Color>Deep golden,amber,copper</Color>
+                <Head>white, creamy,lasting</Head>
             </Appearance>
             <Mouth-feel>
-                <Consistency>Smooth and creamy, with American styles often crisp</Consistency>
-                <Carbonation>Round in most examples</Carbonation>
-                <Body>Light to medium-full</Body>
-                <Finish>Average to long</Finish>
+                <Consistency>Smooth,creamy, crisp</Consistency>
+                <Carbonation>Round</Carbonation>
+                <Body>Light,medium-full</Body>
+                <Finish>Average,long</Finish>
             </Mouth-feel>
             <Samples>
                 <Irish_Red_Ale>
                     <Taste_Smell>Malty, Toasty, Caramel, Toffee, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4 – 6%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>4 – 6</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>18-28</Bitterness_IBU>
-                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
-                    <Glassware>Pint or nonic, beer mug</Glassware>
+                    <Serving_Temperature>46-54</Serving_Temperature>
+                    <Glassware>Pint,nonic, beer mug</Glassware>
                     <Cheese_Pairing_Ideas>Dubliner, Goat Cheese (Chèvre), St. Nectaire</Cheese_Pairing_Ideas>
                 </Irish_Red_Ale>
                 <American_Amber>
                     <Taste_Smell>Malty, Toasty, Caramel, Toffee, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>25-40</Bitterness_IBU>
-                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
-                    <Glassware>Pint or nonic, beer mug</Glassware>
+                    <Serving_Temperature>46-54</Serving_Temperature>
+                    <Glassware>Pint,nonic, beer mug</Glassware>
                     <Cheese_Pairing_Ideas>Cheddar, Gouda, Münster, Pecorino</Cheese_Pairing_Ideas>
                 </American_Amber>
             </Samples>
         </IPA_and_Pale_Ale>
         <Brown_Ale>
             <Appearance>
-                <Color>Reddish-copper to dark brown</Color>
+                <Color>Reddish-copper,dark brown</Color>
                 <Head>Moderate, rocky, tan-colored</Head>
             </Appearance>
             <Mouth-feel>
                 <Consistency>Smooth</Consistency>
-                <Carbonation>Delicate to spritzy</Carbonation>
-                <Body>Light to medium to medium-full</Body>
+                <Carbonation>Delicate,spritzy</Carbonation>
+                <Body>Light,medium ,medium-full</Body>
                 <Finish>Average</Finish>
             </Mouth-feel>
             <Samples>
                 <English_Dark_Mild_Ale>
                     <Taste_Smell>Malty, Caramel, Fruity, Light- Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>3 – 4.5%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>3 – 4.5</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>10-25</Bitterness_IBU>
-                    <Popular_Examples>Moorhouse’s Black Cat, Yards Brawler, Alexander Keith’s Brown Ale</Popular_Examples>
-                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
-                    <Glassware>Pint or nonic, tumbler, beer mug</Glassware>
+                    <Serving_Temperature>46-54</Serving_Temperature>
+                    <Glassware>Pint,nonic, tumbler, beer mug</Glassware>
                     <Cheese_Pairing_Ideas>Asiago, Cheshire, Colby, Emmental, Gloucester, Gouda, Gruyère</Cheese_Pairing_Ideas>
                 </English_Dark_Mild_Ale>
                 <English_Brown_Ale>
                     <Taste_Smell>Malty, Nutty, Caramel, Bready, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.25 – 5.8%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>4.25 – 5.8</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>20-30</Bitterness_IBU>
-                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
-                    <Glassware>Pint or nonic, tumbler, beer mug</Glassware>
+                    <Serving_Temperature>46-54</Serving_Temperature>
+                    <Glassware>Pint,nonic, tumbler, beer mug</Glassware>
                     <Cheese_Pairing_Ideas>Asiago, Cheshire, Colby, Emmental, Gloucester, Gouda, Gruyère.</Cheese_Pairing_Ideas>
                 </English_Brown_Ale>
             </Samples>
         </Brown_Ale>
         <Stout>
             <Appearance>
-                <Color>Medium brown to black</Color>
-                <Head>Creamy, often long-lasting, leaving a lace on the glass</Head>
+                <Color>Medium brown,black</Color>
+                <Head>Creamy</Head>
             </Appearance>
             <Mouth-feel>
                 <Consistency>Smooth, velvety, silky, chewy</Consistency>
-                <Carbonation>Delicate to round</Carbonation>
-                <Body>Medium to full</Body>
-                <Finish>Long to everlasting, dry to wet</Finish>
+                <Carbonation>Delicate,round</Carbonation>
+                <Body>Medium,full</Body>
+                <Finish>Long,everlasting, dry,wet</Finish>
             </Mouth-feel>
             <Samples>
                 <Russian_Imperial_Stout>
                     <Taste_Smell>Balanced, Rich, Malty, Dark Fruit, Full-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>7 – 12+%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>7 – 12</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>45-80</Bitterness_IBU>
-                    <Serving_Temperature>Cellar, 55-57°</Serving_Temperature>
-                    <Glassware>Pint or nonic, tumbler, beer snifter</Glassware>
+                    <Serving_Temperature>55-57</Serving_Temperature>
+                    <Glassware>Pint,nonic, tumbler, beer snifter</Glassware>
                     <Cheese_Pairing_Ideas>Cheddar (aged), Gouda (aged), Roquefort</Cheese_Pairing_Ideas>
                 </Russian_Imperial_Stout>
                 <Foreign>
                     <Taste_Smell>Malty, Bitter-Sweet, Roasty, Full-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>6 – 9%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>6 – 9</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>30-65</Bitterness_IBU>
-                    <Popular_Examples>Guinness Foreign Extra Stout, Lion Stout, Coopers Best Extra Stout, Dragon Stout, Pike Brewing XXXXX Extra Stout, Marin San Quentin’s Breakout Stout</Popular_Examples>
-                    <Serving_Temperature>Cellar 55-57°</Serving_Temperature>
-                    <Glassware>Pint or nonic, beer snifter</Glassware>
+                    <Serving_Temperature>55-57</Serving_Temperature>
+                    <Glassware>Pint,nonic, beer snifter</Glassware>
                     <Cheese_Pairing_Ideas>Blue Cheese, Dubliner Cheddar</Cheese_Pairing_Ideas>
                 </Foreign>
             </Samples>
         </Stout>
         <Belgian>
             <Appearance>
-                <Color>Pale blonde to dark brown</Color>
-                <Head>Fluffy, long-lasting, leaving a lace on the glass</Head>
+                <Color>Pale blonde,dark brown</Color>
+                <Head>Fluffy</Head>
             </Appearance>
             <Mouth-feel>
-                <Consistency>Crisp to silky</Consistency>
-                <Carbonation>Round and can be spritzy, but very delicate in specific styles</Carbonation>
-                <Body>Light to medium-full</Body>
+                <Consistency>Crisp,silky</Consistency>
+                <Carbonation>Round</Carbonation>
+                <Body>Light,medium-full</Body>
                 <Finish>Long</Finish>
             </Mouth-feel>
             <Samples>
                 <Bière_De_Garde>
                     <Taste_Smell>Balanced, Malty, Fruity, Earthy, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>5.5 – 8%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>5.5 – 8</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>25-30</Bitterness_IBU>
-                    <Popular_Examples>3 Monts Flanders Golden Ale, Flying Dog Garde Dog, Gayant La Goudale</Popular_Examples>
-                    <Serving_Temperature>Cool, 46-54° to Cellar 55-57°</Serving_Temperature>
+                    <Serving_Temperature>46-57</Serving_Temperature>
                     <Glassware>Stemmed tulip, large wine glass</Glassware>
                     <Cheese_Pairing_Ideas>Asiago, Brie, Camembert, Colby, Edam, Feta, Munster, White Cheddar (mild)</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Salads and a variety of shellfish and other seafood</Food_Pairing_Ideas>
                 </Bière_De_Garde>
                 <Belgian_IPA>
                     <Taste_Smell>Hoppy, Fruity Esters, Spicy, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>6 – 12%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>6 – 12</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>50-80</Bitterness_IBU>
-                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
+                    <Serving_Temperature>46-54</Serving_Temperature>
                     <Glassware>Stemmed tulip, chalice, large wine glass</Glassware>
                     <Cheese_Pairing_Ideas>Blue Cheese, Cheddar, Edam, Gorgonzola</Cheese_Pairing_Ideas>
                 </Belgian_IPA>
@@ -188,30 +184,30 @@
         </Belgian>
         <Porter>
             <Appearance>
-                <Color>Dark-copper to dark brown</Color>
-                <Head>Off-white to tan and generally lasting</Head>
+                <Color>Dark-copper,dark brown</Color>
+                <Head>Off-white,tan</Head>
             </Appearance>
             <Mouth-feel>
-                <Consistency>Smooth, while more roasty versions may have some astringency</Consistency>
-                <Carbonation>Ranges across examples from delicate to spritzy</Carbonation>
-                <Body>Medium to full</Body>
-                <Finish>Long, dry in some versions</Finish>
+                <Consistency>Smooth</Consistency>
+                <Carbonation>delicate,spritzy</Carbonation>
+                <Body>Medium,full</Body>
+                <Finish>Long,dry</Finish>
             </Mouth-feel>
             <Samples>
                 <English_Porter>
                     <Taste_Smell>Malty, Toffee, Chocolaty, Toasty, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>20-50</Bitterness_IBU>
-                    <Serving_Temperature>Cold, 46-54° to cellar 55-57°</Serving_Temperature>
-                    <Glassware>Pint or nonic</Glassware>
+                    <Serving_Temperature>46-57</Serving_Temperature>
+                    <Glassware>Pint,nonic</Glassware>
                     <Cheese_Pairing_Ideas>Asiago, Brie, Colby, Emmental, Gloucester, Gouda (aged), Gruyère</Cheese_Pairing_Ideas>
                 </English_Porter>
                 <American_Porter>
                     <Taste_Smell>Malty, Complex, Roasty, Chocolaty, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.5 - 10+%</Alcohol_by_Volume_ABV_Range>
+                    <Alcohol_by_Volume_ABV_Range>4.5 - 10</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>20-50</Bitterness_IBU>
-                    <Serving_Temperature>Cool, 46-54° to Cellar, 55-57°</Serving_Temperature>
-                    <Glassware>Pint or nonic, beer mug</Glassware>
+                    <Serving_Temperature>46-57</Serving_Temperature>
+                    <Glassware>Pint,nonic, beer mug</Glassware>
                     <Cheese_Pairing_Ideas>Asiago, Brie, Colby, Gloucester. Emmental, Gouda (aged), Gruyère with milder American Porters</Cheese_Pairing_Ideas>
                 </American_Porter>
             </Samples>
