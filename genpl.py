@@ -24,13 +24,11 @@ def handle_style(style, node):
 		handle_group(style, simplify(k), v)
 
 def print_style(style):
-	global_styles.append("""
-style(%s) :-
-	true.""" % (style))
+	global_styles.append(style)
 
-def handle_group(parent, name, node):
+def handle_group(style, name, node):
 	if name != 'nogroup':
-		print_group(parent, name)
+		print_group(style, name)
 
 		for k, v in node.iteritems():
 			if v != None:
@@ -42,40 +40,40 @@ def handle_group(parent, name, node):
 
 	else:
 		for k, v in node.iteritems():
-			handle_sample(parent, simplify(k), v)
+			handle_sample(style, simplify(k), v, 'style')
 
 def print_group(style, group):
 	global_groups.append("""
 group(%(group)s) :-
 	style(%(style)s),
-	color(%(group)s),
-	head(%(group)s),
-	malt(%(group)s),
-	hops(%(group)s),
-	yeast(%(group)s),
-	consistency(%(group)s),
-	carbonation(%(group)s),
-	body(%(group)s),
-	finish(%(group)s).""" % {'group': group, 'style': style})
+	color_(%(group)s),
+	head_(%(group)s),
+	malts_(%(group)s),
+	hops_(%(group)s),
+	yeast_(%(group)s),
+	consistency_(%(group)s),
+	carbonation_(%(group)s),
+	body_(%(group)s),
+	finish_(%(group)s).""" % {'group': group, 'style': style})
 
-def handle_sample(group, beer, node):
-	print_beer(group, beer)
+def handle_sample(group, beer, node, label = 'group'):
+	print_beer(group, beer, label)
 
 	for k, v in node.iteritems():
 		if k != 'Popular_Examples':
 			print_attribute(beer, simplify(k), v)
 
-def print_beer(group, beer):
+def print_beer(group, beer, label):
 	global_beers.append("""
 beer(%(beer)s) :-
-	group(%(group)s),
-	taste_smell(%(beer)s),
-	alcohol_by_volume_abv_range(%(beer)s),
-	bitterness_ibu(%(beer)s),
-	serving_temperature(%(beer)s),
-	glassware(%(beer)s),
-	cheese_pairing_ideas(%(beer)s),
-	food_pairing_ideas(%(beer)s).""" % {'group': group, 'beer': beer})
+	%(label)s(%(group)s),
+	taste_smell_(%(beer)s),
+	alcohol_by_volume_abv_range_(%(beer)s),
+	bitterness_ibu_(%(beer)s),
+	serving_temperature_(%(beer)s),
+	glassware_(%(beer)s),
+	cheese_pairing_ideas_(%(beer)s),
+	food_pairing_ideas_(%(beer)s).""" % {'group': group, 'beer': beer, 'label': label})
 
 def handle_group_attribute(group, _, node):
 	for k, v in node.iteritems():
@@ -97,8 +95,10 @@ def print_attribute(group, attribute, value):
 
 	save_attribute_goal(attribute, keywords)
 
-	result = "\n%(attr)s(%(group)s) :-" % {'group': group, 'attr': attribute}
-	result += ";".join(["\n\t%(attr)s(%(value)s)" % {'group': group, 'attr': attribute, 'value': v} for v in keywords if v != None]) + "."
+	result = ""
+
+	for i in [{'group': group, 'attr': attribute, 'value': v} for v in keywords if v != None]:
+		result += "%(attr)s_(%(group)s) :- %(attr)s(%(value)s).\n" % i
 
 	save_attribute(attribute, result)
 
@@ -125,28 +125,30 @@ top_goal(X) :- beer(X)."""
 
 	handle_root(xmltodict.parse(data)['beer'])
 
-	for i in global_styles:
-		print i
-		break
-
 	for i in global_groups:
 		print i
-		break
+		# break
 
 	for i in global_beers:
 		print i
-		break
+		# break
 
 	for k, v in global_attributes.iteritems():
 		for i in v:
 			print i
-			break
+			# break
 
 	print ""
 
 	options = {}
 
-	menu = True
+	menu = False
+
+	if menu:
+		print "style(X) :- menuask(style, X, [%s]).\n" % ",".join(global_styles)
+	else:
+		print "style(X) :- ask(style, X).\n"
+		print "multivalued(style).\n"
 
 	for k, v in goals_attributes.iteritems():
 		if menu:

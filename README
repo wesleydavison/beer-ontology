@@ -1,0 +1,22 @@
+Para executar:
+
+$ prolog
+
+Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 6.6.6)
+Copyright (c) 1990-2013 University of Amsterdam, VU Amsterdam
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to redistribute it under certain conditions.
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ['native.pro'].
+% native.pro compiled 0.01 sec, 57 clauses
+true.
+
+?- ['beer.nkb'].
+% beer.nkb compiled 0.06 sec, 2,190 clauses
+true.
+
+?- solve.
+...
