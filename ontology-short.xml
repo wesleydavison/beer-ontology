@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beer>
+    <Ale>
+        <Blonde_and_Golden>
+            <Appearance>
+                <Color>Blonde and golden to deep golden-copper</Color>
+                <Head>White to off-white, fizzy to creamy and delicate to generally lasting</Head>
+            </Appearance>
+            <Aroma-and-taste>
+                <Malts>Generally bready and sweet, leaning biscuity in Kölsch and Blonde, to caramel in ESB</Malts>
+                <Hops>Low to moderate aroma and flavor of Noble hop variety in Kölsch and any variety in Blonde, and earthy English hop character in ESB</Hops>
+                <Yeast>Fruity esters generally low in Kölsch, moderate in Blonde and moderate to high in ESB</Yeast>
+            </Aroma-and-taste>
+            <Mouth-feel>
+                <Consistency>Smooth, with a crispness to Kölsch and some Blondes</Consistency>
+                <Carbonation>Light to spritzy</Carbonation>
+                <Body>Light to medium-full</Body>
+                <Finish>Average to long</Finish>
+            </Mouth-feel>
+            <Samples>
+                <Kölsch>
+                    <Taste_Smell>Crisp, Grainy, Floral, Light-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.5 – 5.5%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>20-28</Bitterness_IBU>
+                    <Popular_Examples>Gaffel Kölsch, Reissdorf Kölsch, Flying Dog Tire Bite Golden Ale, Ballast Point Pale Ale, Harpoon Summer Beer, Alaskan Summer Ale, Pyramid Curve Ball Blonde Ale, Stoudts Karnival Kölsch, New Holland Full Circle</Popular_Examples>
+                    <Serving_Temperature>Cold, 39-45°</Serving_Temperature>
+                    <Glassware>Stange, pilsner, pint or nonic</Glassware>
+                    <Cheese_Pairing_Ideas>Brick, Brie, Camembert, Edam, Monterey Jack</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>German dishes, salads, chicken dishes, grilled foods, fish, shellfish and spicy foods</Food_Pairing_Ideas>
+                </Kölsch>
+                <Extra_Special_Bitter>
+                    <Taste_Smell>Malty, Earthy, Balanced, Medium-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>30-50</Bitterness_IBU>
+                    <Popular_Examples>Fuller’s ESB, Redhook ESB, Left Hand Sawtooth Ale, Anderson Valley Boont ESB, AleSmith Anvil Ale ESB, Yards Extra Special Ale, Shipyard Ringwood Old Thumper, SKA ESB Special Ale, Southern Tier Harvest Ale, Laughing Dog CSB</Popular_Examples>
+                    <Serving_Temperature>Cellar, 55-57°</Serving_Temperature>
+                    <Glassware>Pint or nonic, beer mug</Glassware>
+                    <Cheese_Pairing_Ideas>Asiago, Derby, Gouda, Havarti, Lancashire, Leicester</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Fish &amp; chips, pork, roast chicken, lamb, barbecue, fried foods and pizza</Food_Pairing_Ideas>
+                </Extra_Special_Bitter>
+            </Samples>
+        </Blonde_and_Golden>
+        <Wheat_Beer>
+            <Appearance>
+                <Color>Very Pale, from almost white, to brown</Color>
+                <Head>Fluffy, thick and long-lasting, leaving a lace on the glass</Head>
+            </Appearance>
+            <Aroma-and-taste>
+                <Malts>Sweet and biscuity to chocolaty and toasty in dark versions</Malts>
+                <Hops>Very mild and “in the background"</Hops>
+                <Yeast>Fruity, with mild citrus to estery notes, including banana, with spicy flavor compounds, including clove in some styles</Yeast>
+            </Aroma-and-taste>
+            <Mouth-feel>
+                <Consistency>Crisp, yet smooth</Consistency>
+                <Carbonation>Creamy, round</Carbonation>
+                <Body>Light to medium</Body>
+                <Finish>Long</Finish>
+            </Mouth-feel>
+            <Samples>
+                <Weizenbock>
+                    <Taste_Smell>Malty, Wheat, Spicy, Fruity, Medium-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>6.9 – 9.3%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>15-35</Bitterness_IBU>
+                    <Popular_Examples>Aventinus Wheat Doppel, Weihenstephaner Vitus, Schneider &amp; Brooklyner Hopfen-Weisse, Ayinger Weizenbock, Victory Moonglow Weizenbock</Popular_Examples>
+                    <Serving_Temperature>Cool 46-54°</Serving_Temperature>
+                    <Glassware>Weizen Glass, Chalice</Glassware>
+                    <Cheese_Pairing_Ideas>Gouda (including smoked), Manchego</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Beef, roast pork, smoked ham, German-style dishes, desserts and chocolates</Food_Pairing_Ideas>
+                </Weizenbock>
+                <Witbier>
+                    <Taste_Smell>Fruity, Coriander, Orange peel, Light-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.8 – 5.2%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>10 – 17</Bitterness_IBU>
+                    <Popular_Examples>Hoegaarden Original White Ale, St. Bernardus Witbier, Wittekerke, Allagash White Ale, Avery White Rascal, Ommegang Witte, Southampton Double White Ale, Unibroue Blanche de Chambly, Hitachino Nest White Ale, Clown Shoes Clementine White Ale</Popular_Examples>
+                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
+                    <Glassware>Pint or Nonic, Tumbler, Beer Mug</Glassware>
+                    <Cheese_Pairing_Ideas>Edam, Feta, Goat Cheese (Chèvre), Mascarpone, Mozzarella</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Salads with light and vinaigrette dressings, light seafood dishes, mussels, sushi, lightly seasoned poultry and apple glazed pork</Food_Pairing_Ideas>
+                </Witbier>
+            </Samples>
+        </Wheat_Beer>
+        <IPA_and_Pale_Ale>
+            <Appearance>
+                <Color>Deep golden to amber to copper</Color>
+                <Head>Generally white, creamy and lasting</Head>
+            </Appearance>
+            <Aroma-and-taste>
+                <Malts>Generally bready and sweet with caramel notes, and sometimes toasty</Malts>
+                <Hops>Earthy hop character in English styles; citrusy, piney hop character in American styles</Hops>
+                <Yeast>Fruity esters from the ale yeast strain</Yeast>
+            </Aroma-and-taste>
+            <Mouth-feel>
+                <Consistency>Smooth and creamy, with American styles often crisp</Consistency>
+                <Carbonation>Round in most examples</Carbonation>
+                <Body>Light to medium-full</Body>
+                <Finish>Average to long</Finish>
+            </Mouth-feel>
+            <Samples>
+                <Irish_Red_Ale>
+                    <Taste_Smell>Malty, Toasty, Caramel, Toffee, Medium-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4 – 6%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>18-28</Bitterness_IBU>
+                    <Popular_Examples>O’Hara’s Irish Red, Smithwick’s Irish Ale, Murphy’s Irish Red Beer, Samuel Adams Irish Red, Starr Hill Amber Ale, Karl Strauss Red Trolley Ale, Knee Deep Immigration Red Ale, Thomas Hooker Irish-Style Red Ale, Moylan’s Irish Style Red Ale, Thomas Creek River Falls Red Ale</Popular_Examples>
+                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
+                    <Glassware>Pint or nonic, beer mug</Glassware>
+                    <Cheese_Pairing_Ideas>Dubliner, Goat Cheese (Chèvre), St. Nectaire</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Lamb, light fish dishes, French onion soup, roast beef and barbecue</Food_Pairing_Ideas>
+                </Irish_Red_Ale>
+                <American_Amber>
+                    <Taste_Smell>Malty, Toasty, Caramel, Toffee, Medium-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>25-40</Bitterness_IBU>
+                    <Popular_Examples>Bear Republic Red Rocket Ale, North Coast Red Seal Ale, Scuttlebutt Amber Ale, Rogue St. Rogue Red Ale, Green Flash Hop Head Red Ale, Mendocino Red Tail Ale, New Belgium Fat Tire Amber Ale, Tröegs Hopback Amber Ale, Anderson Valley Boont Amber Ale, Bell’s Amber Ale, Lagunitas Censored Ale, Stone Levitation Ale, Fish Tale Organic Amber Ale, Full Sail Amber Ale, He’Brew Genesis Ale</Popular_Examples>
+                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
+                    <Glassware>Pint or nonic, beer mug</Glassware>
+                    <Cheese_Pairing_Ideas>Cheddar, Gouda, Münster, Pecorino</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Burgers, barbecue, game, seafood, chicken, spicy dishes and pasta</Food_Pairing_Ideas>
+                </American_Amber>
+            </Samples>
+        </IPA_and_Pale_Ale>
+        <Brown_Ale>
+            <Appearance>
+                <Color>Reddish-copper to dark brown</Color>
+                <Head>Moderate, rocky, tan-colored</Head>
+            </Appearance>
+            <Aroma-and-taste>
+                <Malts>Range includes sweet, caramel, chocolaty, toffee, toasty, nutty, coffee, roasty and dark fruits</Malts>
+                <Hops>Mild, although American examples may contain citrus character</Hops>
+                <Yeast>Generally neutral, though soft fruity esters may be present</Yeast>
+            </Aroma-and-taste>
+            <Mouth-feel>
+                <Consistency>Smooth</Consistency>
+                <Carbonation>Delicate to spritzy</Carbonation>
+                <Body>Light to medium to medium-full</Body>
+                <Finish>Average</Finish>
+            </Mouth-feel>
+            <Samples>
+                <English_Dark_Mild_Ale>
+                    <Taste_Smell>Malty, Caramel, Fruity, Light- Medium-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>3 – 4.5%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>10-25</Bitterness_IBU>
+                    <Popular_Examples>Moorhouse’s Black Cat, Yards Brawler, Alexander Keith’s Brown Ale</Popular_Examples>
+                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
+                    <Glassware>Pint or nonic, tumbler, beer mug</Glassware>
+                    <Cheese_Pairing_Ideas>Asiago, Cheshire, Colby, Emmental, Gloucester, Gouda, Gruyère</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Beef stew, grilled and roast meats, pork and sausage</Food_Pairing_Ideas>
+                </English_Dark_Mild_Ale>
+                <English_Brown_Ale>
+                    <Taste_Smell>Malty, Nutty, Caramel, Bready, Medium-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.25 – 5.8%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>20-30</Bitterness_IBU>
+                    <Popular_Examples>Newcastle Brown Ale, Samuel Smith’s Nut Brown Ale, Wychwood Hobgoblin, Abita Turbodog, Lost Coast Downtown Brown, SweetWater Georgia Brown, Peak Organic Nut Brown Ale, TommyKnocker Maple Nut Brown, RJ Rockers Bald Eagle Brown, Bell’s Best Brown Ale, Legend Brown Ale</Popular_Examples>
+                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
+                    <Glassware>Pint or nonic, tumbler, beer mug</Glassware>
+                    <Cheese_Pairing_Ideas>Asiago, Cheshire, Colby, Emmental, Gloucester, Gouda, Gruyère.</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Beef stew, grilled and roasted meats, pork and sausage</Food_Pairing_Ideas>
+                </English_Brown_Ale>
+            </Samples>
+        </Brown_Ale>
+        <Stout>
+            <Appearance>
+                <Color>Medium brown to black</Color>
+                <Head>Creamy, often long-lasting, leaving a lace on the glass</Head>
+            </Appearance>
+            <Aroma-and-taste>
+                <Malts>Caramel-sweet, chocolaty, toffee, coffee, toasty, roasty or burnt</Malts>
+                <Hops>Supportive bitterness in Irish and English styles; aromatic and bold in American styles</Hops>
+                <Yeast>Estery notes of various dark fruits, including plum and fig</Yeast>
+            </Aroma-and-taste>
+            <Mouth-feel>
+                <Consistency>Smooth, velvety, silky, chewy</Consistency>
+                <Carbonation>Delicate to round</Carbonation>
+                <Body>Medium to full</Body>
+                <Finish>Long to everlasting, dry to wet</Finish>
+            </Mouth-feel>
+            <Samples>
+                <Russian_Imperial_Stout>
+                    <Taste_Smell>Balanced, Rich, Malty, Dark Fruit, Full-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>7 – 12+%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>45-80</Bitterness_IBU>
+                    <Popular_Examples>Samuel Smith’s Imperial Stout, North Coast Old Rasputin Imperial Stout, Brooklyn Black Chocolate Stout, Clown Shoes Blaecorn Unidragon, Clown Shoes Vampire Slayer, Stone Imperial Russian Stout, Oskar Blues Ten FIDY, Great Divide Yeti Imperial Stout, Victory Storm King Stout, Heavy Seas Peg Leg, Bell’s Expedition Stout, Avery The Czar Imperial Stout, Samuel Adams Imperial Stout, Thirsty Dog Siberian Night</Popular_Examples>
+                    <Serving_Temperature>Cellar, 55-57°</Serving_Temperature>
+                    <Glassware>Pint or nonic, tumbler, beer snifter</Glassware>
+                    <Cheese_Pairing_Ideas>Cheddar (aged), Gouda (aged), Roquefort</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Smoked foul and cheesecake</Food_Pairing_Ideas>
+                </Russian_Imperial_Stout>
+                <Foreign>
+                    <Taste_Smell>Malty, Bitter-Sweet, Roasty, Full-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>6 – 9%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>30-65</Bitterness_IBU>
+                    <Popular_Examples>Guinness Foreign Extra Stout, Lion Stout, Coopers Best Extra Stout, Dragon Stout, Pike Brewing XXXXX Extra Stout, Marin San Quentin’s Breakout Stout</Popular_Examples>
+                    <Serving_Temperature>Cellar 55-57°</Serving_Temperature>
+                    <Glassware>Pint or nonic, beer snifter</Glassware>
+                    <Cheese_Pairing_Ideas>Blue Cheese, Dubliner Cheddar</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Shepherd’s pie, steak and raw oysters</Food_Pairing_Ideas>
+                </Foreign>
+            </Samples>
+        </Stout>
+        <Belgian>
+            <Appearance>
+                <Color>Pale blonde to dark brown</Color>
+                <Head>Fluffy, long-lasting, leaving a lace on the glass</Head>
+            </Appearance>
+            <Aroma-and-taste>
+                <Malts>Sweet and biscuity to chocolaty and toasty in dark styles</Malts>
+                <Hops>Very mild, however can be discernable in some popular styles</Hops>
+                <Yeast>Fruity, estery notes of various light and dark tree fruits, including banana spicy, with flavor compounds that include clove in some styles</Yeast>
+            </Aroma-and-taste>
+            <Mouth-feel>
+                <Consistency>Crisp to silky</Consistency>
+                <Carbonation>Round and can be spritzy, but very delicate in specific styles</Carbonation>
+                <Body>Light to medium-full</Body>
+                <Finish>Long</Finish>
+            </Mouth-feel>
+            <Samples>
+                <Bière_De_Garde>
+                    <Taste_Smell>Balanced, Malty, Fruity, Earthy, Medium-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>5.5 – 8%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>25-30</Bitterness_IBU>
+                    <Popular_Examples>3 Monts Flanders Golden Ale, Flying Dog Garde Dog, Gayant La Goudale</Popular_Examples>
+                    <Serving_Temperature>Cool, 46-54° to Cellar 55-57°</Serving_Temperature>
+                    <Glassware>Stemmed tulip, large wine glass</Glassware>
+                    <Cheese_Pairing_Ideas>Asiago, Brie, Camembert, Colby, Edam, Feta, Munster, White Cheddar (mild)</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Salads and a variety of shellfish and other seafood</Food_Pairing_Ideas>
+                </Bière_De_Garde>
+                <Belgian_IPA>
+                    <Taste_Smell>Hoppy, Fruity Esters, Spicy, Medium-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>6 – 12%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>50-80</Bitterness_IBU>
+                    <Popular_Examples>Achouffe Houblon Chouffe Dobbelen IPA Tripel, Piraat Ale, Poperings Hommel Bier, De Ranke XX Bitter, Flying Dog Raging Bitch, Stone Cali-Belgique IPA, Allagash Hugh Malone Ale, Green Flash Le Freak Ale, Clown Shoes Muffin Top, Clown Shoes Tramp Stamp</Popular_Examples>
+                    <Serving_Temperature>Cool, 46-54°</Serving_Temperature>
+                    <Glassware>Stemmed tulip, chalice, large wine glass</Glassware>
+                    <Cheese_Pairing_Ideas>Blue Cheese, Cheddar, Edam, Gorgonzola</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Spicy seafood dishes and fried foods</Food_Pairing_Ideas>
+                </Belgian_IPA>
+            </Samples>
+        </Belgian>
+        <Porter>
+            <Appearance>
+                <Color>Dark-copper to dark brown</Color>
+                <Head>Off-white to tan and generally lasting</Head>
+            </Appearance>
+            <Aroma-and-taste>
+                <Malts>Include caramel, chocolaty, toffee, toasty, nutty, coffee, dark fruit and mild to assertive roasty character</Malts>
+                <Hops>Generally mild, although some American examples can be more assertive</Hops>
+                <Yeast>Generally neutral, though moderate fruity esters may be present</Yeast>
+            </Aroma-and-taste>
+            <Mouth-feel>
+                <Consistency>Smooth, while more roasty versions may have some astringency</Consistency>
+                <Carbonation>Ranges across examples from delicate to spritzy</Carbonation>
+                <Body>Medium to full</Body>
+                <Finish>Long, dry in some versions</Finish>
+            </Mouth-feel>
+            <Samples>
+                <English_Porter>
+                    <Taste_Smell>Malty, Toffee, Chocolaty, Toasty, Medium-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>20-50</Bitterness_IBU>
+                    <Popular_Examples>Samuel Smith’s Taddy Porter, Fuller’s London Porter, St Peter’s Old Style Porter, Meantime London Porter, Salopian Entire Butt English Porter, Ridgeway Santa’s Butt, Left Hand Black Jack Porter, St George Porter</Popular_Examples>
+                    <Serving_Temperature>Cold, 46-54° to cellar 55-57°</Serving_Temperature>
+                    <Glassware>Pint or nonic</Glassware>
+                    <Cheese_Pairing_Ideas>Asiago, Brie, Colby, Emmental, Gloucester, Gouda (aged), Gruyère</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Roasted, smoked and barbecued foods, including beef, poultry, seafood, sausage, chili and hearty stews. Try with cheesecake for dessert</Food_Pairing_Ideas>
+                </English_Porter>
+                <American_Porter>
+                    <Taste_Smell>Malty, Complex, Roasty, Chocolaty, Medium-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.5 - 10+%</Alcohol_by_Volume_ABV_Range>
+                    <Bitterness_IBU>20-50</Bitterness_IBU>
+                    <Popular_Examples>Anchor Porter, Sierra Nevada Porter, Smuttynose Robust Porter, Rogue Mocha Porter, Deschutes Black Butte Porter, Great Lakes Edmund Fitzgerald Porter, Knee Deep Tanilla Porter, Flying Dog Road Dog Porter, Scuttlebutt Porter, Stone Smoked Porter, Alaskan Smoked Porter, Kona Pipeline Porter, Breckenridge Vanilla Porter, Avery New World Porter, Thomas Hooker Imperial Porter</Popular_Examples>
+                    <Serving_Temperature>Cool, 46-54° to Cellar, 55-57°</Serving_Temperature>
+                    <Glassware>Pint or nonic, beer mug</Glassware>
+                    <Cheese_Pairing_Ideas>Asiago, Brie, Colby, Gloucester. Emmental, Gouda (aged), Gruyère with milder American Porters</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Roasted, smoked and barbecued foods, including beef, poultry, seafood, sausage, chili and hearty stews. Try with cheesecake for dessert</Food_Pairing_Ideas>
+                </American_Porter>
+            </Samples>
+        </Porter>
+    </Ale>
+</beer>
