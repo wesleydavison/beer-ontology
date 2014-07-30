@@ -23,6 +23,7 @@ sintaFile = open("./expert-sinta-input.txt", 'w+')
 #pseudo-initialization of variables
 outOntFile = ""
 outSintaFile = ""
+sintaVariables = {}
 ruleCounter = 0
 
 
@@ -71,6 +72,11 @@ for beerClass in xml[root]:
 						conditionClass2 = "E " if firstTimeClass3 else "OU "
 						outSintaFile += conditionClass2 + subClass3.encode('utf-8') + " = " + \
 										attr + '\n'
+						if subClass3 in sintaVariables:
+							sintaVariables[subClass3].add(attr.lower())
+						else:
+							sintaVariables[subClass3] = set()
+							sintaVariables[subClass3].add(attr.lower())
 						firstTimeClass3 = False	
 					firstTimeClass3 = True
 			
@@ -91,6 +97,7 @@ for beerClass in xml[root]:
 							conditionClass3 = "E " if firstTimeClass4 else "OU "
 							outSintaFile += conditionClass3 + subClass4.encode('utf-8') + " = "  + attr + '\n'
 							firstTimeClass4 = False	
+							#sintaVariables[subClass4] += attr
 											
 						firstTimeClass3 = False
 					outSintaFile += "E sub-classe de cerveja = " + subClass1.encode('utf-8') +  "\n"
@@ -105,6 +112,14 @@ for beerClass in xml[root]:
 		outOntFile += '\n'
 #closing rdf root tag
 outOntFile +=  "</rdf:RDF>"
+
+#dumping variables
+outSintaFile += "==================== Variables =================\n"
+for key in sintaVariables:
+	outSintaFile += key + ":"
+	for value in sintaVariables[key]:
+		outSintaFile += "|" + value 
+	outSintaFile += "\n"
 
 #writing in file
 ontFile.write(outOntFile)
