@@ -5,9 +5,6 @@
             <Appearance>
                 <Color>Blonde and golden,deep golden-copper</Color>
             </Appearance>
-            <Aroma-and-taste>
-                <Malts>bready,sweet,blonde,caramel</Malts>
-            </Aroma-and-taste>
             <Mouth-feel>
                 <Consistency>Smooth</Consistency>
                 <Carbonation>Light,spritzy</Carbonation>
@@ -16,35 +13,30 @@
             </Mouth-feel>
             <Samples>
                 <Kölsch>
-                    <Taste_Smell>Crisp, Grainy, Floral, Light-bodied</Taste_Smell>
+                    <Taste_Smell>Crisp,Grainy,Floral,Light-bodied</Taste_Smell>
                     <Alcohol_by_Volume_ABV_Range>4.5 – 5.5%</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>20-28</Bitterness_IBU>
-                    <Serving_Temperature>Cold, 39-45°</Serving_Temperature>
-                    <Glassware>Stange, pilsner, pint or nonic</Glassware>
-                    <Cheese_Pairing_Ideas>Brick, Brie, Camembert, Edam, Monterey Jack</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>German dishes, salads, chicken dishes, grilled foods, fish, shellfish and spicy foods</Food_Pairing_Ideas>
+                    <Serving_Temperature>39-45</Serving_Temperature>
+                    <Glassware>Stange,pilsner,pint,nonic</Glassware>
+                    <Cheese_Pairing_Ideas>Brick,Brie,Camembert,Edam, Monterey Jack</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>German dishes, salads, chicken dishes, grilled foods, fish, shellfish, spicy foods</Food_Pairing_Ideas>
                 </Kölsch>
                 <Extra_Special_Bitter>
-                    <Taste_Smell>Malty, Earthy, Balanced, Medium-bodied</Taste_Smell>
-                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5%</Alcohol_by_Volume_ABV_Range>
+                    <Taste_Smell>Malty,Earthy,Balanced,Medium-bodied</Taste_Smell>
+                    <Alcohol_by_Volume_ABV_Range>4.5 – 6.5</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>30-50</Bitterness_IBU>
-                    <Serving_Temperature>Cellar, 55-57°</Serving_Temperature>
-                    <Glassware>Pint or nonic, beer mug</Glassware>
-                    <Cheese_Pairing_Ideas>Asiago, Derby, Gouda, Havarti, Lancashire, Leicester</Cheese_Pairing_Ideas>
-                    <Food_Pairing_Ideas>Fish &amp; chips, pork, roast chicken, lamb, barbecue, fried foods and pizza</Food_Pairing_Ideas>
+                    <Serving_Temperature>Cellar,55-57</Serving_Temperature>
+                    <Glassware>Pint,nonic,mug</Glassware>
+                    <Cheese_Pairing_Ideas>Asiago,Derby,Gouda,Havarti, Lancashire,Leicester</Cheese_Pairing_Ideas>
+                    <Food_Pairing_Ideas>Fish &amp; chips, pork, roast chicken, lamb, barbecue, fried foods, pizza</Food_Pairing_Ideas>
                 </Extra_Special_Bitter>
             </Samples>
         </Blonde_and_Golden>
         <Wheat_Beer>
             <Appearance>
-                <Color>Very Pale, from almost white, to brown</Color>
-                <Head>Fluffy, thick and long-lasting, leaving a lace on the glass</Head>
+                <Color>Very Pale</Color>
+                <Head>Fluffy</Head>
             </Appearance>
-            <Aroma-and-taste>
-                <Malts>Sweet and biscuity to chocolaty and toasty in dark versions</Malts>
-                <Hops>Very mild and “in the background"</Hops>
-                <Yeast>Fruity, with mild citrus to estery notes, including banana, with spicy flavor compounds, including clove in some styles</Yeast>
-            </Aroma-and-taste>
             <Mouth-feel>
                 <Consistency>Crisp, yet smooth</Consistency>
                 <Carbonation>Creamy, round</Carbonation>
@@ -77,11 +69,6 @@
                 <Color>Deep golden to amber to copper</Color>
                 <Head>Generally white, creamy and lasting</Head>
             </Appearance>
-            <Aroma-and-taste>
-                <Malts>Generally bready and sweet with caramel notes, and sometimes toasty</Malts>
-                <Hops>Earthy hop character in English styles; citrusy, piney hop character in American styles</Hops>
-                <Yeast>Fruity esters from the ale yeast strain</Yeast>
-            </Aroma-and-taste>
             <Mouth-feel>
                 <Consistency>Smooth and creamy, with American styles often crisp</Consistency>
                 <Carbonation>Round in most examples</Carbonation>
@@ -114,11 +101,6 @@
                 <Color>Reddish-copper to dark brown</Color>
                 <Head>Moderate, rocky, tan-colored</Head>
             </Appearance>
-            <Aroma-and-taste>
-                <Malts>Range includes sweet, caramel, chocolaty, toffee, toasty, nutty, coffee, roasty and dark fruits</Malts>
-                <Hops>Mild, although American examples may contain citrus character</Hops>
-                <Yeast>Generally neutral, though soft fruity esters may be present</Yeast>
-            </Aroma-and-taste>
             <Mouth-feel>
                 <Consistency>Smooth</Consistency>
                 <Carbonation>Delicate to spritzy</Carbonation>
@@ -152,11 +134,6 @@
                 <Color>Medium brown to black</Color>
                 <Head>Creamy, often long-lasting, leaving a lace on the glass</Head>
             </Appearance>
-            <Aroma-and-taste>
-                <Malts>Caramel-sweet, chocolaty, toffee, coffee, toasty, roasty or burnt</Malts>
-                <Hops>Supportive bitterness in Irish and English styles; aromatic and bold in American styles</Hops>
-                <Yeast>Estery notes of various dark fruits, including plum and fig</Yeast>
-            </Aroma-and-taste>
             <Mouth-feel>
                 <Consistency>Smooth, velvety, silky, chewy</Consistency>
                 <Carbonation>Delicate to round</Carbonation>
@@ -190,11 +167,6 @@
                 <Color>Pale blonde to dark brown</Color>
                 <Head>Fluffy, long-lasting, leaving a lace on the glass</Head>
             </Appearance>
-            <Aroma-and-taste>
-                <Malts>Sweet and biscuity to chocolaty and toasty in dark styles</Malts>
-                <Hops>Very mild, however can be discernable in some popular styles</Hops>
-                <Yeast>Fruity, estery notes of various light and dark tree fruits, including banana spicy, with flavor compounds that include clove in some styles</Yeast>
-            </Aroma-and-taste>
             <Mouth-feel>
                 <Consistency>Crisp to silky</Consistency>
                 <Carbonation>Round and can be spritzy, but very delicate in specific styles</Carbonation>
@@ -228,11 +200,6 @@
                 <Color>Dark-copper to dark brown</Color>
                 <Head>Off-white to tan and generally lasting</Head>
             </Appearance>
-            <Aroma-and-taste>
-                <Malts>Include caramel, chocolaty, toffee, toasty, nutty, coffee, dark fruit and mild to assertive roasty character</Malts>
-                <Hops>Generally mild, although some American examples can be more assertive</Hops>
-                <Yeast>Generally neutral, though moderate fruity esters may be present</Yeast>
-            </Aroma-and-taste>
             <Mouth-feel>
                 <Consistency>Smooth, while more roasty versions may have some astringency</Consistency>
                 <Carbonation>Ranges across examples from delicate to spritzy</Carbonation>
