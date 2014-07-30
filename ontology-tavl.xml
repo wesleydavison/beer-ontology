@@ -371,7 +371,7 @@
                     <Cheese_Pairing_Ideas>Brie, Camembert, Cheddar aged, Goat Cheese Chevre, Swiss Cheese</Cheese_Pairing_Ideas>
                     <Food_Pairing_Ideas>Beef barbecue and spicy Asian dishes</Food_Pairing_Ideas>
                 </Oatmeal_Stout>
-                <American_Double>
+                <American_Double_Stout>
                     <Taste_Smell>Complex, Robust, Malty, Roasty, Full-bodied</Taste_Smell>
                     <Alcohol_by_Volume_ABV_Range>7.5 to 13+</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>50 to 90</Bitterness_IBU>
@@ -380,7 +380,7 @@
                     <Glassware>Pint or nonic, beer snifter, large wine glass</Glassware>
                     <Cheese_Pairing_Ideas>Cheddar aged, Gouda aged, Roquefort</Cheese_Pairing_Ideas>
                     <Food_Pairing_Ideas>Smoked foul and cheesecake</Food_Pairing_Ideas>
-                </American_Double>
+                </American_Double_Stout>
                 <Milk>
                     <Taste_Smell>Malty, Sweet, Chocolaty, Caramel, Full-bodied</Taste_Smell>
                     <Alcohol_by_Volume_ABV_Range>4 to 7</Alcohol_by_Volume_ABV_Range>
@@ -520,7 +520,7 @@
                     <Cheese_Pairing_Ideas>Asiago, Colby, Goat Cheese aged Chevre, Fontina, Gorgonzola, Parmesan, Triple Creme</Cheese_Pairing_Ideas>
                     <Food_Pairing_Ideas>Salads, shellfish, fish, chicken and curried dishes</Food_Pairing_Ideas>
                 </Saison>
-                <Lambic-Fruit>
+                <Lambic_Fruit>
                     <Taste_Smell>Fruity, Sweet, Tart, Low- to Medium-bodied</Taste_Smell>
                     <Alcohol_by_Volume_ABV_Range>3 to 8</Alcohol_by_Volume_ABV_Range>
                     <Bitterness_IBU>5 to 20</Bitterness_IBU>
@@ -529,7 +529,7 @@
                     <Glassware>Flute, beer snifter, stemmed tulip</Glassware>
                     <Cheese_Pairing_Ideas>Goat Cheese Chevre, Mascarpone, Feta</Cheese_Pairing_Ideas>
                     <Food_Pairing_Ideas>Salads with fruit dressings, chocolates and other desserts</Food_Pairing_Ideas>
-                </Lambic-Fruit>
+                </Lambic_Fruit>
                 <Flanders_Oud_Bruin>
                     <Taste_Smell>Complex, Malty, Dark Fruits, Sour, Medium-bodied</Taste_Smell>
                     <Alcohol_by_Volume_ABV_Range>5 to 8.5</Alcohol_by_Volume_ABV_Range>
@@ -634,7 +634,7 @@
     </Ale>
     <Lager>
         <NoGroup>
-            <American_Double>
+            <American_Double_Lager>
                 <Taste_Smell>Hoppy, Balanced, Herbal, Citrusy, Medium-bodied</Taste_Smell>
                 <Alcohol_by_Volume_ABV_Range>7.2 to 9.7</Alcohol_by_Volume_ABV_Range>
                 <Bitterness_IBU>40 to 85</Bitterness_IBU>
@@ -643,7 +643,7 @@
                 <Glassware>Pilsner Glass, Pint or Nonic</Glassware>
                 <Cheese_Pairing_Ideas>Cheese, Gouda, Havarti, Monterey Jack</Cheese_Pairing_Ideas>
                 <Food_Pairing_Ideas>Spicy dishes, including Cajun and curried dishes</Food_Pairing_Ideas>
-            </American_Double>
+            </American_Double_Lager>
             <Japanese_Rice_Lager>
                 <Taste_Smell>Crisp, Clean, Balanced, Light-bodied</Taste_Smell>
                 <Alcohol_by_Volume_ABV_Range>4.5 to 5</Alcohol_by_Volume_ABV_Range>
@@ -704,7 +704,7 @@
                 <Cheese_Pairing_Ideas>Gruyere, smoked cheeses</Cheese_Pairing_Ideas>
                 <Food_Pairing_Ideas>Hearty foods, such as grilled meats, smoked meats and barbecue</Food_Pairing_Ideas>
             </Euro_Dark_Lager>
-            <American_All-Malt_Lager>
+            <American_All_Malt_Lager>
                 <Taste_Smell>Crisp, Clean, Biscuity, Balanced, Light-bodied</Taste_Smell>
                 <Alcohol_by_Volume_ABV_Range>4 to 6</Alcohol_by_Volume_ABV_Range>
                 <Bitterness_IBU>16 to 25</Bitterness_IBU>
@@ -713,7 +713,7 @@
                 <Glassware>Pint or Nonic, Mug, Pilsner Glass</Glassware>
                 <Cheese_Pairing_Ideas>Aged cheeses, Brick Cheese, Cheddar, Jalapeno Cheddar</Cheese_Pairing_Ideas>
                 <Food_Pairing_Ideas>Salads, pizza, hot wings, barbecue, hamburgers, shellfish, fried foods, spicy Indian and Latin foods</Food_Pairing_Ideas>
-            </American_All-Malt_Lager>
+            </American_All_Malt_Lager>
             <Doppelbock>
                 <Taste_Smell>Malty, Rich, Toasty, Dark Fruit, Full-bodied</Taste_Smell>
                 <Alcohol_by_Volume_ABV_Range>6.7 to 11+</Alcohol_by_Volume_ABV_Range>
@@ -764,7 +764,7 @@
                 <Cheese_Pairing_Ideas>Blue Cheese, Cheddar sharp</Cheese_Pairing_Ideas>
                 <Food_Pairing_Ideas>Shellfish, barbecue and spicy foods, such as curried dishes</Food_Pairing_Ideas>
             </Euro_Strong_Lager>
-            <Euro_Pale_Lager>
+            <Euro_Pale_Lager_Alt>
                 <Taste_Smell>Crisp, Balanced, Biscuity, Earthy, Light-bodied</Taste_Smell>
                 <Alcohol_by_Volume_ABV_Range>4.6 to 6</Alcohol_by_Volume_ABV_Range>
                 <Bitterness_IBU>15 to 27</Bitterness_IBU>
@@ -773,7 +773,7 @@
                 <Glassware>Pint or Nonic, Pilsner Glass, Beer Mug</Glassware>
                 <Cheese_Pairing_Ideas>Edam, Goat Cheese Chevre, Havarti, Monterey Jack, White Cheddar mild, Swiss cheese</Cheese_Pairing_Ideas>
                 <Food_Pairing_Ideas>Lighter foods including salads, crab, lobster, salmon and chicken and spicier foods including Indian, Mexican and fried foods</Food_Pairing_Ideas>
-            </Euro_Pale_Lager>
+            </Euro_Pale_Lager_Alt>
             <Bock>
                 <Taste_Smell>Malty, Toasty, Caramel, Medium- to Full- bodied</Taste_Smell>
                 <Alcohol_by_Volume_ABV_Range>5.5 to 7.5</Alcohol_by_Volume_ABV_Range>
@@ -784,7 +784,7 @@
                 <Cheese_Pairing_Ideas>Aged cheeses, such as Asiago and Gruyere</Cheese_Pairing_Ideas>
                 <Food_Pairing_Ideas>Barbecue, Cajun dishes, jerk chicken, sausage and pretzels</Food_Pairing_Ideas>
             </Bock>
-            <American_Amber>
+            <American_Amber_Lager>
                 <Taste_Smell>Crisp, Clean, Caramel, Balanced, Medium-bodied</Taste_Smell>
                 <Alcohol_by_Volume_ABV_Range>4.5 to 5.5</Alcohol_by_Volume_ABV_Range>
                 <Bitterness_IBU>18 to 32</Bitterness_IBU>
@@ -793,7 +793,7 @@
                 <Glassware>Pint or Nonic, Pilsner Glass, Mug</Glassware>
                 <Cheese_Pairing_Ideas>Cheese, Edam, Gouda, Monterey Jack, White Cheddar, Pecorino</Cheese_Pairing_Ideas>
                 <Food_Pairing_Ideas>Hearty foods, such as barbecue, chili and hamburgers</Food_Pairing_Ideas>
-            </American_Amber>
+            </American_Amber_Lager>
             <Munich_Dunkel_Lager>
                 <Taste_Smell>Balanced, Malty, Chocolaty, Toasty, Medium-bodied</Taste_Smell>
                 <Alcohol_by_Volume_ABV_Range>4.5 to 5.6</Alcohol_by_Volume_ABV_Range>

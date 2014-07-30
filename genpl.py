@@ -125,18 +125,28 @@ top_goal(X) :- beer(X)."""
 
 	handle_root(xmltodict.parse(data)['beer'])
 
-	for i in global_styles + global_groups + global_beers:
+	for i in global_styles:
 		print i
+		break
+
+	for i in global_groups:
+		print i
+		break
+
+	for i in global_beers:
+		print i
+		break
 
 	for k, v in global_attributes.iteritems():
 		for i in v:
 			print i
+			break
 
 	print ""
 
 	options = {}
 
-	menu = False
+	menu = True
 
 	for k, v in goals_attributes.iteritems():
 		if menu:
