@@ -68,29 +68,33 @@ for beerClass in xml[root]:
 					attributes = xml[root][str(beerClass)][subClass1][subClass2][subClass3].split(',') 
 					
 					for attr in attributes:
-						conditionClass2 = "E" if firstTimeClass3 else "OU"
-						outSintaFile += conditionClass2 + "\n" + ident(1) +\
-										subClass3.encode('utf-8') + " = " + \
+						conditionClass2 = "E " if firstTimeClass3 else "OU "
+						outSintaFile += conditionClass2 + subClass3.encode('utf-8') + " = " + \
 										attr + '\n'
 						firstTimeClass3 = False	
 					firstTimeClass3 = True
 			
 			if subClass2 == 'Samples':
 				#no more conditions. Time to close Sinta rule 
-				outSintaFile += u"ENTÃO\n" + ident(1) + "sub-classe de cerveja = " + subClass1.encode('utf-8') + " CNF 100%" +'\n\n'
+				outSintaFile += u"ENTÃO sub-classe de cerveja = " + subClass1.encode('utf-8') + " CNF 100%" +'\n\n'
 
 				for subClass3 in xml[root][str(beerClass)][subClass1][subClass2]:
 					ruleCounter += 1
 					outSintaFile += "==========  Regra " + str(ruleCounter) + "==========\n"
 					outSintaFile += "Regra " + subClass3 + "\n"
-					outSintaFile += "SE\n" + ident(1) + "sub-classe de cerveja = " + subClass1.encode('utf-8') +  "\n"
+					outSintaFile += "S"
 					firstTimeClass3 = True
 					for subClass4 in xml[root][str(beerClass)][subClass1][subClass2][subClass3]:
-						outSintaFile += "E\n"+ ident(1) + \
-											subClass4.encode('utf-8') + " = " + \
-											xml[root][str(beerClass)][subClass1][subClass2][subClass3][subClass4] + '\n'
-						firstTimeClass3 = False		
-					outSintaFile +=  u"ENTÃO \n" + ident(1) + "nome de cerveja = " + subClass3 + " CNF 100%" + '\n\n'		
+						attributes = xml[root][str(beerClass)][subClass1][subClass2][subClass3][subClass4].split(',') 
+						firstTimeClass4 = True
+						for attr in attributes:
+							conditionClass3 = "E " if firstTimeClass4 else "OU "
+							outSintaFile += conditionClass3 + subClass4.encode('utf-8') + " = "  + attr + '\n'
+							firstTimeClass4 = False	
+											
+						firstTimeClass3 = False
+					outSintaFile += "E sub-classe de cerveja = " + subClass1.encode('utf-8') +  "\n"
+					outSintaFile +=  u"ENTÃO nome de cerveja = " + subClass3 + " CNF 100%" + '\n\n'		
 
 					outOntFile += ident(1) + "<owl:NamedIndividual rdf:about=\"#" + subClass3.encode('utf-8') + "\">" + '\n'
 					outOntFile += ident(2) + "<rdf:type rdf:resource=\"#" + subClass1.encode('utf-8') + "\"/>" + '\n'
